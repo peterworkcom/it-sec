@@ -2,6 +2,20 @@
 
 Reflected cross-site scripting (or XSS) arises when an application receives data in an HTTP request and includes that data within the immediate response in an unsafe way.
 
+> Key traits:
+
+- Not stored anywhere
+- Requires victim to click a crafted link
+- Happens on the server response
+
+->
+
+- The payload is sent to the server
+- The server includes it in the HTML response
+- Execution happens because the server reflects it
+
+---
+
 ```
 https://insecure-website.com/search?term=gift
 

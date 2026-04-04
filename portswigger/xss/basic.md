@@ -1,5 +1,7 @@
 # basic
 
+> https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
 > try to break out from an input field by adding the line below and submitting it
 
 `<script> alert("fun") </script>`
@@ -85,3 +87,12 @@ prettify ->
 <svg onload="alert('fun')" />
 ">
 ```
+
+| Feature                | Reflected XSS       | Stored XSS           | DOM-Based XSS            |
+| ---------------------- | ------------------- | -------------------- | ------------------------ |
+| Where payload lives    | Request (temporary) | Server (persistent)  | Browser (client-side)    |
+| Execution point        | Server response     | Server response      | Browser (JavaScript)     |
+| Requires user action   | Yes (click link)    | No (just visit page) | Usually yes (visit link) |
+| Affects multiple users | No                  | Yes                  | Depends                  |
+| Detection difficulty   | Medium              | Easy–Medium          | Harder                   |
+| Severity               | Medium              | High                 | Medium–High              |

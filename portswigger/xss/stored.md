@@ -2,6 +2,14 @@
 
 Also known as second-order or persistent XSS -> when an application receives data from an untrusted source and includes that data within its later HTTP responses
 
+> Key traits:
+
+- Persistent (stays in the system)
+- Affects multiple users
+- Considered more dangerous than reflected
+
+---
+
 > Like submitting a comments on a blog posts, which are displayed to other users
 
 ```
