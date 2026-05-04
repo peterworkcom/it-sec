@@ -101,8 +101,9 @@ const Sidebar = (props: SidebarProps) => {
                     class={styles.sidebarFile}
                     classList={{ [styles.active]: props.selected === file.path }}
                     onClick={() => props.onSelect(file)}
+                    title={file.name}
                   >
-                    {file.name}
+                    <span class={styles.sidebarLabel}>{file.name}</span>
                   </button>
                 </li>
               )}
@@ -142,8 +143,9 @@ const TreeList = (props: TreeListProps) => (
               class={styles.sidebarFile}
               classList={{ [styles.active]: props.selected === node.path }}
               onClick={() => props.onSelect(node)}
+              title={node.name}
             >
-              {node.name}
+              <span class={styles.sidebarLabel}>{node.name}</span>
             </button>
           </li>
         )
@@ -167,11 +169,15 @@ const FolderItem = (props: FolderItemProps) => {
 
   return (
     <li class={styles.treeFolder}>
-      <button class={styles.sidebarFolder} onClick={() => props.onToggle(path())}>
+      <button
+        class={styles.sidebarFolder}
+        onClick={() => props.onToggle(path())}
+        title={props.folder.name}
+      >
         <span class={styles.folderArrow} classList={{ [styles.open]: open() }}>
           ›
         </span>
-        {props.folder.name}
+        <span class={styles.sidebarLabel}>{props.folder.name}</span>
       </button>
       <Show when={open()}>
         <TreeList
