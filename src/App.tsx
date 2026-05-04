@@ -61,7 +61,7 @@ const App = () => {
           }
         >
           <main class={styles.content}>
-            <h1 class={styles.contentTitle}>{selected()?.name}</h1>
+            <h1 class={styles.contentTitle}>{`${selected()?.name}.md`}</h1>
             <div class={`${styles.markdownBody} markdown-body`} ref={mdRef} innerHTML={html()} />
           </main>
         </Show>
