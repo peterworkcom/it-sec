@@ -38,12 +38,23 @@ const insertPath = (folder: FolderNode, parts: string[], fullPath: string, conte
   insertPath(child, parts.slice(1), fullPath, content);
 };
 
+const sortTree = (folder: FolderNode): void => {
+  folder.children.sort((a, b) => {
+    if (a.type !== b.type) return a.type === "folder" ? -1 : 1;
+    return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+  });
+  for (const child of folder.children) {
+    if (child.type === "folder") sortTree(child);
+  }
+};
+
 export const contentTree: FolderNode = (() => {
   const root: FolderNode = { type: "folder", name: "root", children: [] };
   for (const [path, content] of Object.entries(raw)) {
     const relative = path.replace("/content/", "");
     insertPath(root, relative.split("/"), path, content);
   }
+  sortTree(root);
   return root;
 })();
 
