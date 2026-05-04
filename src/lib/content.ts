@@ -67,6 +67,14 @@ export const allFiles: FileNode[] = Object.entries(raw).map(([path, content]) =>
 
 export const hasContent = allFiles.length > 0;
 
+export const fileToSlug = (path: string): string =>
+  path.replace(/^\/content\//, "").replace(/\.md$/, "");
+
+const filesBySlug = new Map(allFiles.map((f) => [fileToSlug(f.path), f]));
+
+export const findFileBySlug = (slug: string): FileNode | undefined =>
+  filesBySlug.get(slug);
+
 export const searchFiles = (query: string): FileNode[] => {
   if (!query.trim()) return [];
   const q = query.toLowerCase();

@@ -1,6 +1,4 @@
-# Reflected XSS with event handlers and href attributes blocked
-
-[link](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-event-handlers-and-href-attributes-blocked)
+# [Reflected XSS with event handlers and href attributes blocked](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-event-handlers-and-href-attributes-blocked)
 
 > `svg` -> `animate` acceptable and `animate` can set parent element attribute
 

@@ -1,5 +1,5 @@
-import { createEffect, createMemo, createSignal, Show } from "solid-js";
-import { contentTree, searchFiles } from "./lib/content";
+import { createEffect, createMemo, createSignal, onCleanup, Show } from "solid-js";
+import { contentTree, fileToSlug, findFileBySlug, searchFiles } from "./lib/content";
 import type { FileNode } from "./lib/content";
 import { renderMarkdown } from "./lib/markdown";
 import { attachCopyButtons } from "./lib/copyButtons";
@@ -8,15 +8,35 @@ import SearchView from "./components/SearchView/SearchView";
 import Header from "./components/Header/Header";
 import styles from "./App.module.css";
 
+const fileFromUrl = (): FileNode | null => {
+  const slug = new URLSearchParams(window.location.search).get("file");
+  return slug ? (findFileBySlug(slug) ?? null) : null;
+};
+
 const App = () => {
-  const [selected, setSelected] = createSignal<FileNode | null>(null);
+  const [selected, setSelected] = createSignal<FileNode | null>(fileFromUrl());
   const [query, setQuery] = createSignal("");
   const results = createMemo(() => searchFiles(query()));
+
+  const syncUrl = (file: FileNode | null) => {
+    const url = new URL(window.location.href);
+    if (file) url.searchParams.set("file", fileToSlug(file.path));
+    else url.searchParams.delete("file");
+    const next = url.pathname + url.search + url.hash;
+    if (next !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.pushState({}, "", next);
+    }
+  };
 
   const handleSelect = (file: FileNode) => {
     setSelected(file);
     setQuery("");
+    syncUrl(file);
   };
+
+  const onPopState = () => setSelected(fileFromUrl());
+  window.addEventListener("popstate", onPopState);
+  onCleanup(() => window.removeEventListener("popstate", onPopState));
 
   const html = createMemo(() => {
     const file = selected();
@@ -47,6 +67,7 @@ const App = () => {
           onHome={() => {
             setSelected(null);
             setQuery("");
+            syncUrl(null);
           }}
         />
         <Show

@@ -1,6 +1,4 @@
-# Exploiting cross-site scripting to capture passwords
-
-[link](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-capturing-passwords)
+# [Exploiting cross-site scripting to capture passwords](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-capturing-passwords)
 
 > the exploit would use the browser auto username-password fill to sent it or to retrieve those data
 

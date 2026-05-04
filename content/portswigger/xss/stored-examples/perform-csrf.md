@@ -1,6 +1,4 @@
-# Exploiting XSS to bypass CSRF defenses
-
-[link](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf)
+# [Exploiting XSS to bypass CSRF defenses](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf)
 
 > the goal is to trigger an email reset on the victim but setting up a malicious email and using the csrf of the victim
 

@@ -1,6 +1,4 @@
-## Exploiting cross-site scripting to steal cookies
-
-[link](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies)
+## [Exploiting cross-site scripting to steal cookies](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies)
 
 > stored xss
 

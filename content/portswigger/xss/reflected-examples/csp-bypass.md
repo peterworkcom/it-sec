@@ -1,6 +1,4 @@
-# Reflected XSS protected by CSP, with CSP bypass
-
-[link](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-csp-bypass)
+# [Reflected XSS protected by CSP, with CSP bypass](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-csp-bypass)
 
 > the Content Security Policy (CSP) is a browser security layer only allow scripts from trusted sources, but with `script-src-elem 'unsafe-inline'` it can be bypassed
 
