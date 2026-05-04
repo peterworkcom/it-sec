@@ -1,0 +1,96 @@
+[data-theme="ghost"] {
+  --text: #4a7c50;
+  --text-h: #89d48a;
+  --bg: #060906;
+  --border: #1b2e1c;
+  --accent: #39d353;
+  --accent-bg: rgba(57, 211, 83, 0.08);
+  --accent-border: rgba(57, 211, 83, 0.35);
+  --shadow: 0 4px 24px rgba(57, 211, 83, 0.12);
+
+  --sidebar-bg: #050e06;
+  --sidebar-width: 260px;
+  --sidebar-item-hover: rgba(57, 211, 83, 0.07);
+  --sidebar-item-active-bg: rgba(57, 211, 83, 0.13);
+  --sidebar-item-active-text: #39d353;
+  --sidebar-folder-text: #39d353;
+
+  --search-bg: #080c08;
+  --search-border: #1b2e1c;
+  --search-focus-border: #39d353;
+
+  --code-bg: #0a100a;
+  --pre-bg: #080c08;
+  --pre-border: #1b2e1c;
+  --blockquote-border: #39d353;
+  --blockquote-bg: rgba(57, 211, 83, 0.05);
+  --table-border: #1b2e1c;
+  --table-header-bg: #0a100a;
+  --table-row-alt: rgba(57, 211, 83, 0.03);
+  --hr-color: #1b2e1c;
+
+  --sans: "Courier New", Courier, "Lucida Console", monospace;
+  --heading: "Courier New", Courier, "Lucida Console", monospace;
+  --mono: "Courier New", Courier, "Lucida Console", monospace;
+}
+
+[data-theme="ghost"] h1,
+[data-theme="ghost"] h2,
+[data-theme="ghost"] h3,
+[data-theme="ghost"] h4,
+[data-theme="ghost"] h5,
+[data-theme="ghost"] h6 {
+  text-shadow: 0 0 12px rgba(57, 211, 83, 0.25);
+}
+
+[data-theme="ghost"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+@keyframes ghost-crt {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(100vh + 4px));
+  }
+}
+
+[data-theme="ghost"] body::before {
+  content: "";
+  position: fixed;
+  left: var(--sidebar-width);
+  top: -2px;
+  right: 0;
+  height: 1px;
+  background: rgba(57, 211, 83, 0.3);
+  box-shadow: 0 0 2px rgba(57, 211, 83, 0.2);
+  pointer-events: none;
+  z-index: 998;
+  animation: ghost-crt 22s linear infinite;
+}
+
+[data-theme="ghost"] input[type="search"] {
+  caret-color: #39d353;
+}
+
+[data-theme="ghost"] input[type="search"]:focus {
+  box-shadow:
+    0 0 0 3px rgba(57, 211, 83, 0.15),
+    0 0 16px rgba(57, 211, 83, 0.1);
+}
+
+[data-theme="ghost"] a:hover {
+  text-shadow: 0 0 8px rgba(57, 211, 83, 0.4);
+}

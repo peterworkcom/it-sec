@@ -1,0 +1,171 @@
+.searchView {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--search-view-bg, var(--bg));
+}
+
+.searchViewInner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: var(--sp-16) var(--sp-8) var(--sp-12);
+}
+
+.searchHero {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.searchMain {
+  width: 100%;
+  padding: var(--sp-3) var(--sp-4);
+  font: inherit;
+  font-size: 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--sp-2);
+  background: var(--search-bg);
+  color: var(--text-h);
+  outline: none;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.searchMain:focus {
+  border-color: var(--search-focus-border);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.searchHint {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text);
+  opacity: 0.55;
+  text-align: center;
+}
+
+.noResults {
+  font-size: 14px;
+  color: var(--text);
+  opacity: 0.55;
+  text-align: center;
+  margin: var(--sp-2) 0;
+}
+
+.noContent {
+  text-align: center;
+  color: var(--text);
+  opacity: 0.55;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.noContent code {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: var(--code-bg);
+  padding: 2px var(--sp-1);
+  border-radius: var(--sp-1);
+  color: var(--text-h);
+  opacity: 1;
+}
+
+.searchResultsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.searchCard {
+  border: 1px solid var(--border);
+  border-radius: var(--sp-2);
+  overflow: hidden;
+  background: var(--bg);
+  transition: box-shadow 0.15s;
+}
+
+.searchCard:hover,
+.searchCard.expanded {
+  box-shadow: var(--shadow);
+}
+
+.searchCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-4);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s;
+}
+
+.searchCardHeader:hover {
+  background: var(--sidebar-item-hover);
+}
+
+.searchCardTitle {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  min-width: 0;
+}
+
+.searchCardName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+  text-transform: capitalize;
+}
+
+.searchCardPath {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.searchCardActions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+  margin-left: var(--sp-3);
+}
+
+.cardOpenBtn {
+  font: inherit;
+  font-size: 12px;
+  padding: var(--sp-1) var(--sp-2);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--sp-1);
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.cardOpenBtn:hover {
+  opacity: 0.75;
+}
+
+.cardArrow {
+  font-size: 16px;
+  color: var(--text);
+  display: inline-block;
+  transition: transform 0.18s;
+  transform: rotate(0deg);
+}
+
+.cardArrow.open {
+  transform: rotate(90deg);
+}
+
+.searchCardBody {
+  padding: var(--sp-5) var(--sp-5) var(--sp-4);
+  border-top: 1px solid var(--border);
+  max-width: none;
+}
