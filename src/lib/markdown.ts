@@ -49,6 +49,10 @@ const parseTable = (lines: string[]): string => {
   return `<table><thead>${thead}</thead><tbody>${tbody}</tbody></table>`;
 };
 
+const blockTagRe =
+  /^<(table|thead|tbody|tfoot|tr|div|section|article|aside|details|summary|figure|figcaption|form|fieldset|header|footer|nav|main|ol|ul|dl|pre|blockquote|address|video|audio|canvas|iframe|svg|math)(\s|>|\/>|$)/i;
+const voidTagRe = /^<(hr|br|img|input|source|track|col|wbr|area|embed|link|meta)(\s|>|\/>|$)/i;
+
 const parseBlock = (lines: string[]): string => {
   const html: string[] = [];
   let i = 0;
@@ -72,6 +76,32 @@ const parseBlock = (lines: string[]): string => {
     if (/^-{3,}$/.test(line.trim())) {
       html.push("<hr>");
       i++;
+      continue;
+    }
+
+    const trimmed = line.trim();
+    if (voidTagRe.test(trimmed)) {
+      html.push(line);
+      i++;
+      continue;
+    }
+
+    const blockOpen = trimmed.match(blockTagRe);
+    if (blockOpen) {
+      const tag = blockOpen[1].toLowerCase();
+      const openRe = new RegExp(`<${tag}(?=[\\s/>])`, "gi");
+      const closeRe = new RegExp(`</${tag}\\s*>`, "gi");
+      const collected: string[] = [];
+      let depth = 0;
+      while (i < lines.length) {
+        const cur = lines[i];
+        collected.push(cur);
+        depth += (cur.match(openRe) || []).length;
+        depth -= (cur.match(closeRe) || []).length;
+        i++;
+        if (depth <= 0) break;
+      }
+      html.push(collected.join("\n"));
       continue;
     }
 
