@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# temp thm file
+# convenience files and folders
 thm.txt
 other/thm.txt
+check
