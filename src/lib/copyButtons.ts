@@ -7,7 +7,7 @@ export const attachCopyButtons = (container: HTMLElement): void => {
     btn.textContent = "Copy";
 
     btn.addEventListener("click", () => {
-      const text = pre.querySelector("code")?.textContent ?? pre.textContent ?? "";
+      const text = (pre.querySelector("code")?.textContent ?? pre.textContent ?? "").replace(/\n+$/, "");
       navigator.clipboard
         .writeText(text)
         .then(() => {
