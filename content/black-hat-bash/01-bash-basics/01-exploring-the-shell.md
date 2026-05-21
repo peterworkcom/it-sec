@@ -6,6 +6,8 @@
 bash --version
 ```
 
+## checking environment variables
+
 > list the environmental variables
 
 ```
@@ -43,6 +45,8 @@ echo ${RANDOM}
 `echo $((RANDOM % 100))` -> 0–99
 `echo $((RANDOM % 100 + 1))` -> 1–100
 `echo $((RANDOM % (max - min + 1) + min))` -> arbitrary range [min, max]
+
+## running linux commands
 
 > manual for a command -> explains a command and its options
 

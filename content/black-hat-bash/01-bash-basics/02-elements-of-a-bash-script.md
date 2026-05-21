@@ -1,6 +1,6 @@
 # Elements Of A Bash Script
 
-> shebang line
+## shebang line
 
 ```
 #!/bin/bash
@@ -36,3 +36,23 @@ A shell is specifically a program that provides a commandline interface to the o
 ```
 https://google.github.io/styleguide/shellguide.html
 ```
+
+> shebang line can accept arguments
+
+```
+#!/bin/bash -x
+#!/bin/bash -r
+```
+
+- `-x` -> print all commands and arguments as it is executed
+- `-r` -> creates a restricted bash shell that prevents some potentially dangerous commands in the script
+
+> these arguments can be added to a script outside from the script too
+
+```
+bash -r someScript.sh
+```
+
+- the `-r` will give the same restrictions as it would be in the shebang line in the script
+
+## comments
