@@ -1,5 +1,12 @@
 # SameSite
 
+`SameSite` is a cookie attribute not a header, set by the server when it issues the cookie for the client
+
+```
+   Set-Cookie:    sessionId=abc123;    SameSite=Strict; Secure; HttpOnly
+└─ header name ─┘  └ name=value ┘   └─ attributes that modify the cookie ─┘
+```
+
 ## Difference between a site and an origin?
 
 <table>
@@ -71,7 +78,7 @@
   </tbody>
 </table>
 
-# SameSite restriction levels
+## SameSite restriction levels
 
 - Strict
 - Lax
