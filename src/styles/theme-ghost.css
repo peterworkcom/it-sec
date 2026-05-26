@@ -29,9 +29,9 @@
   --table-row-alt: rgba(57, 211, 83, 0.03);
   --hr-color: #1b2e1c;
 
-  --sans: "Courier New", Courier, "Lucida Console", monospace;
-  --heading: "Courier New", Courier, "Lucida Console", monospace;
-  --mono: "Courier New", Courier, "Lucida Console", monospace;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
 }
 
 [data-theme="ghost"] h1,
