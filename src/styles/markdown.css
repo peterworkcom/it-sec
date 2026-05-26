@@ -43,7 +43,7 @@
 }
 
 .markdown-body blockquote {
-  margin: var(--sp-2) 0;
+  margin: var(--sp-8) 0 var(--sp-4) 0;
   padding: var(--sp-2) var(--sp-4);
   border-left: 3px solid var(--blockquote-border);
   background: var(--blockquote-bg);
