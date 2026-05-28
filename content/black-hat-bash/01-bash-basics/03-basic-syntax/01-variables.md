@@ -40,3 +40,49 @@ echo "there are a lot of $animals" # no "animals" variable
 looksy=$(ls -la)
 echo ${looksy}
 ```
+
+- it just "floods" out the result of the `ls -la`
+
+## unassigned variables
+
+```
+duck="quack"
+echo ${duck}
+unset duck
+echo ${duck}
+```
+
+- the `unset` duck will return nothing
+
+## scoping variables
+
+> `global` variables are available the entire program, but the `scoped` (`local`) variables only available in their respective code blocks
+
+```
+#!/bin/bash
+
+dragoon="have returned"
+
+say_it() {
+    marine="rock n roll"
+    local zergling="say unspeakable things"
+    echo "while the marine ${marine}, the dragoon ${dragoon}, but the zergling ${zergling}"
+}
+
+say_it
+
+echo "while the marine ${marine}, the dragoon ${dragoon}, but the zergling ${zergling}"
+```
+
+> run the script
+
+```
+chmod u+x script.sh
+./script.sh
+while the marine rock n roll, the dragoon have returned, but the zergling say unspeakable things
+while the marine rock n roll, the dragoon have returned, but the zergling
+```
+
+- only the `zergling` don't have value at the second `echo`
+- only the `local` keyword makes the variable `scoped`
+- even the `marine` variable is in the `say_it()` function `scope`, it still a `global` variable
