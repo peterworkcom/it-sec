@@ -26,8 +26,8 @@ const parseTable = (lines: string[]): string => {
     l
       .trim()
       .slice(1, -1)
-      .split("|")
-      .map((c) => c.trim()),
+      .split(/(?<!\\)\|/)
+      .map((c) => c.trim().replace(/\\\|/g, "|")),
   );
   const sepIdx = rows.findIndex((r) => r.every((c) => /^[-: ]+$/.test(c)));
 
