@@ -9,3 +9,7 @@ cookie headers:
 - secure
 - http-only
 - domain
+
+iframe:
+
+- sandbox prop
