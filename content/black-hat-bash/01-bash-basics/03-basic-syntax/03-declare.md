@@ -1,6 +1,8 @@
 # Declare
 
-The `declare` builtin sets attributes on variables (functions too). `typeset` is a synonym kept for compatibility with ksh.
+> `Bash` is essentially typeless, the values are considered as `string` but `Bash` reinterprets the `string` as a `number` only for the duration of an arithmetic context, then the result is a `string` again.
+
+The `declare` builtin sets attributes on variables (functions too). `typeset` is a synonym kept for compatibility with `ksh`.
 
 Prefix an option with `-` to **enable** it and `+` to **disable** it (e.g. `declare +x VAR` removes the export attribute). Most attributes can be combined: `declare -ir MAX=100` makes `MAX` an integer that is also read-only.
 

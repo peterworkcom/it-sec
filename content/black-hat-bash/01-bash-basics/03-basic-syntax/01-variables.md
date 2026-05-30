@@ -6,12 +6,28 @@
 
 ## assigning and accessing variables
 
-> create a `say` variable with a `"quack quack"` value
+> create a `say` variable with a `"quack"` value
+
+```
+say="quack"
+```
+
+or
+
+```
+say=quack
+```
+
+- there are no special characters in the value `quack` so it can be declared both ways, bash will understand it as string
+
+> re-declare variable
 
 ```
 say="quack quack"
 ```
 
+- re-declaring the variable with a new value will overwrite it
+- since there is a special character (whitespace) in between the `"quack quack"` it needs to be quoted
 - the `say = "quack quack"` would fail, no whitespace around the operator (`=`)
 
 > use the `say` variable
