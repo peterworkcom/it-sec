@@ -1,4 +1,4 @@
-# `window` vs multiple same `id`
+# `window` clobbering
 
 - on chrome browser the `window` will add the elements with `id` to its object
 - multiple elements with the same `id` will create a `HTMLCollection`
