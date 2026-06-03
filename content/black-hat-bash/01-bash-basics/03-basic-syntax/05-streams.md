@@ -123,6 +123,8 @@ mkdir -v dir1 dir2 dir1 &| wc -l
 
 ## Discarding output
 
+> can discard output to the `/dev/null`
+
 ```
 command > /dev/null        # toss stdout
 
