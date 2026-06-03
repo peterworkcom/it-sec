@@ -9,7 +9,7 @@ https://example.com:443/page1
 https://example.com:443/page2
 ```
 
-These are the same origin — same scheme (https), same host (example.com), same port (443).
+These are the same origin, same scheme (https), same host (example.com), same port (443).
 
 ## Site
 
