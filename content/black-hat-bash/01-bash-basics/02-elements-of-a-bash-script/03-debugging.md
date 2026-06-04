@@ -2,7 +2,7 @@
 
 - create the following file `noHey.sh`
 
-```
+```sh
 #!/bin/bash
 
 echo "Hey hey"
@@ -13,7 +13,7 @@ echo "what?"
 
 - execute it with the commands below
 
-```
+```bash
 bash noHey.sh
 
 Hey hey
@@ -31,7 +31,7 @@ noHey.sh: line 6: unexpected EOF while looking for matching `"'
 
 > dry run execution
 
-```
+```bash
 bash -n noHey.sh
 
 noHey.sh: line 6: unexpected EOF while looking for matching `"'
@@ -41,7 +41,7 @@ noHey.sh: line 6: unexpected EOF while looking for matching `"'
 
 > trace mode
 
-```
+```bash
 bash -x noHey.sh
 
 + echo 'Hey hey'
@@ -57,7 +57,7 @@ noHey.sh: line 6: unexpected EOF while looking for matching `"'
 
 - create a file `chat.sh` file with the content then execute it
 
-```
+```sh
 #!/bin/bash
 
 set -x
@@ -71,7 +71,7 @@ echo "Not really"
 - the `set -x` and `set +x` sets up a trace mode area, only that area will be "traced"
 - don't forget the `chmod u+x chat.sh`
 
-```
+```bash
 ./chat.sh
 
 + echo 'Hey hey'

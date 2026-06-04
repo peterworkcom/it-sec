@@ -2,19 +2,25 @@
 
 > version of the bash
 
-```
+```bash
 bash --version
 ```
 
 > manual for a command -> explains a command and its options
 
-```
+```bash
 man ls
+```
+
+or
+
+```bash
+man bash
 ```
 
 > commands can have arguments
 
-```
+```bash
 ls -a
 ls --all
 mkdir dir1
@@ -27,7 +33,7 @@ mkdir dir1
 
 > multiple argument
 
-```
+```bash
 ls -l --all
 mkdir dir1 dir2
 ```
@@ -37,7 +43,7 @@ mkdir dir1 dir2
 
 > combine multiple short-form syntax options
 
-```
+```bash
 ls -l -a
 ls -la
 ```

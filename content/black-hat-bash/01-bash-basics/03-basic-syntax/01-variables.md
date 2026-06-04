@@ -8,13 +8,13 @@
 
 > create a `say` variable with a `"quack"` value
 
-```
+```bash
 say="quack"
 ```
 
 or
 
-```
+```bash
 say=quack
 ```
 
@@ -22,7 +22,7 @@ say=quack
 
 > re-declare variable
 
-```
+```bash
 say="quack quack"
 ```
 
@@ -32,19 +32,19 @@ say="quack quack"
 
 > use the `say` variable
 
-```
+```bash
 echo "the duck says ${say}"
 ```
 
 or
 
-```
+```bash
 echo "the duck says $say"
 ```
 
 - the `$` usage difference more visible in this script:
 
-```
+```bash
 animal="duck"
 echo "there are a lot of ${animal}s" # acceptable
 echo "there are a lot of $animals" # no "animals" variable
@@ -52,7 +52,7 @@ echo "there are a lot of $animals" # no "animals" variable
 
 > command substitution syntax
 
-```
+```bash
 looksy=$(ls -la)
 echo ${looksy}
 ```
@@ -61,7 +61,7 @@ echo ${looksy}
 
 ## unassigned variables
 
-```
+```bash
 duck="quack"
 echo ${duck}
 unset duck
@@ -74,7 +74,7 @@ echo ${duck}
 
 > `global` variables are available the entire program, but the `scoped` (`local`) variables only available in their respective code blocks
 
-```
+```sh
 #!/bin/bash
 
 dragoon="have returned"
@@ -92,9 +92,10 @@ echo "while the marine ${marine}, the dragoon ${dragoon}, but the zergling ${zer
 
 > run the script
 
-```
+```bash
 chmod u+x script.sh
 ./script.sh
+
 while the marine rock n roll, the dragoon have returned, but the zergling say unspeakable things
 while the marine rock n roll, the dragoon have returned, but the zergling
 ```

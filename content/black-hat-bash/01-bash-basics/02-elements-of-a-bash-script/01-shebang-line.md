@@ -1,6 +1,6 @@
 # shebang line
 
-```
+```sh
 #!/bin/bash
 ```
 
@@ -10,7 +10,7 @@
 
 > different interpreters
 
-```
+```sh
 #!/usr/bin/env <interpreter>
 ```
 
@@ -37,8 +37,11 @@ https://google.github.io/styleguide/shellguide.html
 
 > shebang line can accept arguments
 
-```
+```sh
 #!/bin/bash -x
+```
+
+```sh
 #!/bin/bash -r
 ```
 
@@ -47,7 +50,7 @@ https://google.github.io/styleguide/shellguide.html
 
 > these arguments can be added to a script outside from the script too
 
-```
+```bash
 bash -r someScript.sh
 ```
 
