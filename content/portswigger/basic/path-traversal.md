@@ -45,3 +45,20 @@ Naive filters that just strip `../` can often be bypassed:
 
 - null byte `%00`, more info [here](?file=portswigger%2Fbasic%2Fnull-byte)
 - `/var/www/images` just an example
+
+## How to defend against it
+
+- Avoid passing user input to the filesystem at all, use an indirect map (e.g., an ID that looks up a known filename) instead of letting users specify paths.
+- Canonicalize and validate, resolve the full path, then verify it still sits inside the intended base directory:
+
+```
+import os
+base = "/var/www/files"
+full = os.path.realpath(os.path.join(base, user_input))
+if not full.startswith(base + os.sep):
+    raise Exception("Invalid path")
+```
+
+- Allowlist acceptable filenames/extensions rather than blocklisting bad patterns.
+- Run with least privilege so the web process can't read sensitive system files even if traversal succeeds.
+- Use framework-provided safe file APIs where available.
