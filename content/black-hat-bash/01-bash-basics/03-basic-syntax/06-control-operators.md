@@ -58,10 +58,12 @@ mkdir: cannot create directory ‘dir’: File exists
 
 > redirect the output
 
+- translates `stdout` to `stdin`
+
 ```bash
 ls | wc -l
 
-#
+# number of lines
 ```
 
 - `ls` lists the files in the current directory

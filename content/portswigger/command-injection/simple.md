@@ -6,6 +6,7 @@
 - open any product page
 - check the product stock (stock check button)
 - check the request in burp suite history
+- send it tot repeater
 
 ```
 POST /product/stock HTTP/2
