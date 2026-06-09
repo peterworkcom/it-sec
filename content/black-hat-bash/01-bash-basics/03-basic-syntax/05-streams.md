@@ -18,9 +18,9 @@ Every process starts with three open file descriptors (FDs):
 
 ## operators
 
-> stdin - `>` is shorthand for `1>` - append `>>` is shorthand for `1>>`
-> stdout - `2>` - append `2>>`
-> stderr - `<` - no append
+> stdout - `>` is shorthand for `1>` - append `>>` is shorthand for `1>>`
+> stderr - `2>` - append `2>>`
+> stdin - `<` - no append
 
 - Normal results go to `stdout` so you can pipe or save them, while errors go to `stderr` so they still show up even when you've redirected stdout elsewhere.
 
@@ -121,7 +121,7 @@ mkdir -v dir1 dir2 dir1 &| wc -l
 
 - `&|` bash shorthand for `2>&1 |`
 
-## Discarding output
+## discarding output
 
 > can discard output to the `/dev/null`
 
