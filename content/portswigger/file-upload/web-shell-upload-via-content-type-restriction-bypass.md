@@ -2,6 +2,14 @@
 
 > uploading a malicious php file as an avatar by exploiting `Content-Type` header
 
+- boot up burp suite
+- log in
+- upload an image (any small image)
+- go back to the profile page
+- check the burp suite proxy history (turn filters off if necessary)
+- there is a request for the image for avatar
+- this request will be the exploit request -> send it to repeater
+
 > exploit php file
 
 - create a file called `exploit.php`
@@ -12,8 +20,6 @@
 
 > changing `Content-Type` header
 
-- boot up burp suite
-- log in
 - turn burp intercept on
 - upload the file again as an avatar
 - check the caught request for the form
