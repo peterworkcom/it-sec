@@ -1,6 +1,6 @@
 # [Web shell upload via obfuscated file extension](https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-obfuscated-file-extension)
 
-> uploading a malicious php file as an avatar while php is blacklisted
+> uploading a malicious php file with obfuscated file extension
 
 - boot up burp suite
 - log in

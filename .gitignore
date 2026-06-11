@@ -28,3 +28,6 @@ thm.txt
 other/thm.txt
 check
 other/scripts/websockets-manipulating-messages-to-exploit-vulnerabilities/venv
+__pycache__/
+*.pyc
+other/scripts/file-upload-web-shell-upload-via-race-condition/responses
