@@ -46,11 +46,39 @@ mkdir -v dir3 dir4 &>> log.txt
 
 - the first two line will create new content for the `log.txt` while the third will append the content to the end of the file
 
-# `<` -> **file** to `stdin`
+## `<` -> **file** to `stdin`
 
 ```bash
-echo "rock n roll" > read.txt
-cat < read.txt
+echo "cat likes fish" > catFood.txt
+cat < catFood.txt
 ```
 
-- `<` feeds the `read.txt` to the `cat` command
+- `<` feeds the `cat` with `catFood.txt`
+
+## `<<` -> block of text to `stdin`
+
+```bash
+cat << EOF
+go go go
+rock n roll
+EOF
+```
+
+- it fill feed the `cat` with the text from `EOF` to `EOF`
+- the `EOF` can be any text, `MORE`, `duck`, just have to match
+- after the `cat << EOF` you can use `Enter` to go to the next line
+
+## `\|` -> `stdout` to `stdin`
+
+- translates `stdout` to `stdin`
+
+```bash
+ls | wc -l
+
+# number of lines
+```
+
+- `ls` lists the files in the current directory
+- `|` passes that list to the next command
+- `wc -l` counts the number of lines
+- `#` the number of lines
