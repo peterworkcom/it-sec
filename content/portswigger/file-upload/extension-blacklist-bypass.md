@@ -65,7 +65,7 @@ Sorry, php files are not allowed
 
 ```
 Content-Disposition: form-data; name="avatar"; filename=".htaccess"
-Content-Type: test/plain
+Content-Type: text/plain
 
 AddType application/x-httpd-php .fun
 ```
