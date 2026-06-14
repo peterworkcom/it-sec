@@ -75,7 +75,7 @@ phishing
 > What cybersecurity task benefits from AI helping to imagine attacker behavior we might not consider?
 
 ```
-Privacy Protection
+
 ```
 
 > Explainability tools such as SHAP and LIME help with what?
