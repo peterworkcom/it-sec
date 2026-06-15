@@ -44,11 +44,20 @@ const App = () => {
   });
 
   let mdRef: HTMLDivElement | undefined;
+  let contentRef: HTMLElement | undefined;
 
   createEffect(() => {
     html();
     queueMicrotask(() => {
       if (mdRef) attachCopyButtons(mdRef);
+    });
+  });
+
+  // Reset scroll to the top whenever a different file is loaded.
+  createEffect(() => {
+    selected();
+    queueMicrotask(() => {
+      if (contentRef) contentRef.scrollTop = 0;
     });
   });
 
@@ -81,7 +90,7 @@ const App = () => {
             />
           }
         >
-          <main class={styles.content}>
+          <main class={styles.content} ref={contentRef}>
             <h1 class={styles.contentTitle}>{`${selected()?.name}.md`}</h1>
             <div class={`${styles.markdownBody} markdown-body`} ref={mdRef} innerHTML={html()} />
           </main>

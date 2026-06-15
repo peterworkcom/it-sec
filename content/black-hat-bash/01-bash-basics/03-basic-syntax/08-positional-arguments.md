@@ -1,5 +1,14 @@
 # positional arguments
 
+| variable             | description                              |
+| -------------------- | ---------------------------------------- |
+| `$0`                 | the name of the script file              |
+| `$1`, `$2`, `$3` ... | positional arguments                     |
+| `$#`                 | number of passed positional arguments    |
+| `$@`                 | all positional argument, individually    |
+| `$*`                 | all positional argument, individually    |
+| `"$*"`               | all positional argument, in one `string` |
+
 > bash scripts can take up positional arguments (parameters) passed on the command line
 
 - create a file `make_folder.sh`
@@ -46,7 +55,7 @@ chmod +x make_more_folders.sh
 - the `${1}`, `${2}`, `${3}` ... represent the placement of the parameters
 - the `${0}` represent the script name
 
-> accessing all the parameters
+> accessing all the parameters individually
 
 - create a file `make_all_the_folders.sh`
 
@@ -68,3 +77,26 @@ chmod +x make_all_the_folders.sh
 - it will create all the folders
 - the `$#` represent count of the parameters (only works in this syntax)
 - the `$@` represent all of the parameters (only works in this syntax)
+
+> accessing all the parameters individually or one
+
+- create a file `make_mixed_folder.sh`
+
+```sh
+#!/bin/bash
+
+echo "number of parameters: $#"
+mkdir $*
+mkdir "$*"
+```
+
+then
+
+```bash
+chmod +x make_mixed_folder.sh
+./make_mixed_folder.sh roach ravager
+```
+
+- it will create the folders twice
+- `$*` -> first individually
+- `"$*"` -> second in on `string`
