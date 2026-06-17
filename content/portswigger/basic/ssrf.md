@@ -71,3 +71,31 @@ stockApi=http://localhost/admin
 
 - can URL-encode characters to confuse the URL-parsing code
 - can double-encoding characters
+
+## open redirect
+
+> the goal is to make a redirect server to exploit the open redirect endpoint
+
+- the url might contain query parameters that after passing the validation would redirect the page (status code 3xx)
+- browsing the page might contain links/buttons that would redirect the page
+
+```
+GET /product/nextProduct?currentProductId=2&path=/product?productId=3 HTTP/2
+...
+```
+
+- the `&path=/product?productId=3` part probably the page it redirect the server to
+- switching it to `&path=http://x.x.x.x/admin` might redirect to the admin page in a servers side request
+- so the `/product/nextProduct?currentProductId=2&path=http://x.x.x.x/admin` inserted in a `stockApi` request might return the admin page
+
+```
+...
+stockApi=/product/nextProduct?currentProductId=2&path=http://x.x.x.x/admin
+```
+
+- of course the `stockApi` might called differently
+- the redirect query param could be called differently too, a couple ideas
+
+```
+url path next redirect redirectUrl returnUrl return dest destination continue goto target r u link out
+```
