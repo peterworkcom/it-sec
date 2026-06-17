@@ -4,17 +4,17 @@
 
 | Code    | Meaning                                                   |
 | ------- | --------------------------------------------------------- |
-| `0`     | Success                                                   |
-| `1`     | General/catch-all error (generic failures)                |
-| `2`     | Misuse of a shell builtin (wrong syntax, missing keyword) |
-| `126`   | Command found but **not executable** (permission problem) |
-| `127`   | Command **not found** (typo, or not in `$PATH`)           |
-| `128`   | Invalid argument to `exit` (`exit 3.14`)                  |
-| `128+N` | Process killed by **signal N** (see below)                |
-| `130`   | Terminated by **Ctrl+C** (SIGINT, signal 2 → 128+2)       |
-| `137`   | Killed (SIGKILL, signal 9 → 128+9; often the OOM killer)  |
-| `143`   | Terminated (SIGTERM, signal 15 → 128+15)                  |
-| `255`   | Exit status out of range (`exit -1`)                      |
+| `0`     | success                                                   |
+| `1`     | general/catch-all error (generic failures)                |
+| `2`     | misuse of a shell builtin (wrong syntax, missing keyword) |
+| `126`   | command found but **not executable** (permission problem) |
+| `127`   | command **not found** (typo, or not in `$PATH`)           |
+| `128`   | invalid argument to `exit` (`exit 3.14`)                  |
+| `128+n` | process killed by **signal n** (see below)                |
+| `130`   | terminated by **ctrl+c** (SIGINT, signal 2 -> 128+2)      |
+| `137`   | killed (SIGKILL, signal 9 -> 128+9; often the OOM killer) |
+| `143`   | terminated (SIGTERM, signal 15 -> 128+15)                 |
+| `255`   | exit status out of range (`exit -1`)                      |
 
 `3-125`: free for scripts to use however fitted, can define your own meanings
 
