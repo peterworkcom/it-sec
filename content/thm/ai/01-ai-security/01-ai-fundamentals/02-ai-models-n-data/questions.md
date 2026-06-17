@@ -21,25 +21,25 @@ ML-BOM
 > What term describes one complete pass of the training algorithm through the entire dataset?
 
 ```
-
+Epoch
 ```
 
 > What problem occurs when a model memorises training data rather than learning general patterns?
 
 ```
-
+Overfitting
 ```
 
 > What post-training optimisation technique reduces the numerical precision of model weights to cut memory and compute requirements?
 
 ```
-
+Quantisation
 ```
 
 > What training approach trains a model across decentralised devices, sending only weight updates rather than raw data to a central server?
 
 ```
-
+Federated learning
 ```
 
 > What is the process of taking a pre-trained model and continuing to train it on a smaller, task-specific dataset?

@@ -32,7 +32,6 @@ echo "sleep for 10 seconds"
 sleep 10 &
 
 echo "& have no time for this!"
-
 ```
 
 ## `&&` logical `AND`
