@@ -9,6 +9,9 @@
 - make a copy of the `output.txt` file as `backup.txt`
 - print the `output.txt` file content to the screen
 
+<details>
+<summary>solution</summary>
+
 ```sh
 #!/bin/bash
 
@@ -23,3 +26,5 @@ echo "${FIRST} ${LAST}" >> output.txt
 cp output.txt backup.txt
 cat output.txt
 ```
+
+</details>

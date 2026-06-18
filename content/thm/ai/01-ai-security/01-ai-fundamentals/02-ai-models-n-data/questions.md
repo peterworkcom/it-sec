@@ -45,13 +45,13 @@ Federated learning
 > What is the process of taking a pre-trained model and continuing to train it on a smaller, task-specific dataset?
 
 ```
-
+Fine-tuning
 ```
 
 > What term describes a model that has already been trained on a large general-purpose dataset?
 
 ```
-
+pre-trained model
 ```
 
 > What documentation artifact accompanies a model to describe what it is, how it was built, and where it falls short?
