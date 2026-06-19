@@ -57,13 +57,13 @@ pre-trained model
 > What documentation artifact accompanies a model to describe what it is, how it was built, and where it falls short?
 
 ```
-
+Model Card
 ```
 
 > What are the billions of floating-point numbers that make up a trained model collectively referred to as?
 
 ```
-
+weights
 ```
 
 > Complete the exercise to get the flag!
