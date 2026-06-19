@@ -107,7 +107,7 @@ stockApi=http://localhost%2523@stock.weliketoshop.net/admin
 stockApi=http://localhost%2523@stock.weliketoshop.net/admin/delete?username=carlos
 ```
 
-## what is going on (best-supported model)
+## so what is going on?!
 
 > The string is parsed by two independent components that disagree about the host:
 
