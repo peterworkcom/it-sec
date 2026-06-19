@@ -53,7 +53,7 @@ Sorry, only JPG & PNG files are allowed
 
 - use `null byte` to make the server ignore the file extension
 
-**`null byte` -> `%00`, more info [here](?file=portswigger%2Fbasic%2Fnull-byte)**
+**`null byte` -> `%00`, more info [here](?file=portswigger/basic/null-byte)**
 
 - add `%00.jpg` after the `.php` extension
 

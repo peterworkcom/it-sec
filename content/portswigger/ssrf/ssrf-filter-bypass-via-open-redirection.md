@@ -1,6 +1,6 @@
 # [SSRF with filter bypass via open redirection vulnerability](https://portswigger.net/web-security/ssrf/lab-ssrf-filter-bypass-via-open-redirection)
 
-**note: workaround explanation [here](?file=portswigger%2Fbasic%2Fssrf)**
+**note: workaround explanation [here](?file=portswigger/basic/ssrf)**
 
 > exploiting open redirect for internal system access
 

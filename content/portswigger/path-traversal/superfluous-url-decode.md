@@ -1,6 +1,6 @@
 # [File path traversal, traversal sequences stripped with superfluous URL-decode](https://portswigger.net/web-security/file-path-traversal/lab-superfluous-url-decode)
 
-> detailed document about path traversal [here](?file=portswigger%2Fbasic%2Fpath-traversal)
+**detailed document about path traversal [here](?file=portswigger/basic/path-traversal)**
 
 > workaround for the url encoded path
 

@@ -30,7 +30,7 @@ HTTP/2 400 Bad Request
 
 > obfuscate/encode `localhost/admin`
 
-**note: workaround explanation [here](?file=portswigger%2Fbasic%2Fssrf)**
+**note: workaround explanation [here](?file=portswigger/basic/ssrf)**
 
 - send the `/product/stock` request to the repeater for easier testing
 - change the `stockApi` to

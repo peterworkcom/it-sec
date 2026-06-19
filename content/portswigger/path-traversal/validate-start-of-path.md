@@ -1,6 +1,6 @@
 # [File path traversal, validation of start of path](https://portswigger.net/web-security/file-path-traversal/lab-validate-start-of-path)
 
-> detailed document about path traversal [here](?file=portswigger%2Fbasic%2Fpath-traversal)
+**detailed document about path traversal [here](?file=portswigger/basic/path-traversal)**
 
 > Expected base folder
 

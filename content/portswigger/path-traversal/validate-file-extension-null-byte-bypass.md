@@ -1,6 +1,6 @@
 # [File path traversal, validation of file extension with null byte bypass](https://portswigger.net/web-security/file-path-traversal/lab-validate-file-extension-null-byte-bypass)
 
-> detailed document about path traversal [here](?file=portswigger%2Fbasic%2Fpath-traversal)
+**detailed document about path traversal [here](?file=portswigger/basic/path-traversal)**
 
 > bypass the extension requirement
 

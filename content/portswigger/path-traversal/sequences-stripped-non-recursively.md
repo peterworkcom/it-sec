@@ -1,6 +1,6 @@
 # [File path traversal, traversal sequences stripped non-recursively](https://portswigger.net/web-security/file-path-traversal/lab-sequences-stripped-non-recursively)
 
-> detailed document about path traversal [here](?file=portswigger%2Fbasic%2Fpath-traversal)
+**detailed document about path traversal [here](?file=portswigger/basic/path-traversal)**
 
 > bypass the strip `../`
 

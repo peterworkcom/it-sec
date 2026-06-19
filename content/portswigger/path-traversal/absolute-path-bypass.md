@@ -1,6 +1,6 @@
 # [File path traversal, traversal sequences blocked with absolute path bypass](https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass)
 
-> detailed document about path traversal [here](?file=portswigger%2Fbasic%2Fpath-traversal)
+**detailed document about path traversal [here](?file=portswigger/basic/path-traversal)**
 
 > accessing `/etc/passwd` directly
 

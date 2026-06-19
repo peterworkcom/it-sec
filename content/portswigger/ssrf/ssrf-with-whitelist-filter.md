@@ -31,7 +31,7 @@ HTTP/2 400 Bad Request
 
 > change the `localhost/admin` to pass whitelist
 
-**note: workaround explanation [here](?file=portswigger%2Fbasic%2Fssrf)**
+**note: workaround explanation [here](?file=portswigger/basic/ssrf)**
 
 - change the `stockApi` to
 

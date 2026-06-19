@@ -43,7 +43,8 @@ Naive filters that just strip `../` can often be bypassed:
 | Null byte (older systems) | `file.pdf%00.png` or `/etc/passwd%00.png`      |
 | Expected base folder      | `/var/www/images/../../../etc/passwd`          |
 
-- null byte `%00`, more info [here](?file=portswigger%2Fbasic%2Fnull-byte)
+**null byte `%00`, more info [here](?file=portswigger/basic/null-byte)**
+
 - `/var/www/images` just an example
 
 ## How to defend against it
