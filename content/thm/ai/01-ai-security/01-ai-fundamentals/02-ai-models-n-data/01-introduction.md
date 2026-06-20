@@ -2,12 +2,12 @@
 
 > [AI Models & Data](https://tryhackme.com/room/aimodelsdata)
 
-- `AI` training data is drawn from poorly documented, unaudited sources, meaning most organisations have no reliable answer to where their training data came from, what it contained, or whether it was tampered with
+- Understand where AI training data comes from and the security risks introduced by poor data provenance
 
-- PII and live credentials routinely end up baked into model weights through large-scale web scraping and cannot be patched out once the model is deployed
+- Recognise how PII and sensitive credentials can become permanently embedded in model weights through large-scale web scraping
 
-- Model-building decisions such as quantisation and federated learning introduce security trade-offs that are rarely documented, meaning organisations inherit unknown behaviour modifications alongside efficiency gains
+- Understand how key model-building decisions (overfitting, quantisation, and federated learning) each introduce distinct security risks
 
-- Fine-tuning a pre-trained model inherits everything beneath it: safety alignment erodes with as few as 10 adversarial examples, and fine-tuned models are measurably more susceptible to prompt injection than their base counterparts
+- Understand the inheritance problem and what organisations unknowingly take on when fine-tuning pre-trained models
 
-- Trained model weights are fundamentally opaque; security testing can only sample behaviour rather than audit it, and model cards (the primary transparency mechanism) remain voluntary, frequently incomplete, and sometimes absent entirely
+- Recognise why trained models are opaque black boxes, and what model cards do (and fail to do) to address this

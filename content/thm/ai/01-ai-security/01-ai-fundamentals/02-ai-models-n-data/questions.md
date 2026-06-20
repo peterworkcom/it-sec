@@ -69,5 +69,5 @@ weights
 > Complete the exercise to get the flag!
 
 ```
-
+THM{A_m0del_Stud3nt}
 ```
