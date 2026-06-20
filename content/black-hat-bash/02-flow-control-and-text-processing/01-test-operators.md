@@ -28,3 +28,14 @@
 | `>`      | checks if a string comes after another (alphabetical)  |
 | `-z`     | checks if a string null                                |
 | `-n`     | checks if a string not null                            |
+
+## integer comparison operators
+
+| operator | description                                    |
+| -------- | ---------------------------------------------- |
+| `-eq`    | checks if a number equal to another            |
+| `-ne`    | checks if a number not equal to another        |
+| `-ge`    | checks if a number greater or equal to another |
+| `-gt`    | checks if a number greater then another        |
+| `-le`    | checks if a number lesser or equal to another  |
+| `-lt`    | checks if a number lesser then another         |

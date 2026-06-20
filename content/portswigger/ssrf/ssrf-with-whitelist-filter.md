@@ -114,7 +114,7 @@ stockApi=http://localhost%2523@stock.weliketoshop.net/admin/delete?username=carl
 - a **validator** (checks the host against the whitelist)
 - an **HTTP requester** (makes the outbound request)
 
-> They are not a pipeline handing fields to each other — they each parse the same string on their own. The exploit lives in the gap between them.
+> They are not a pipeline handing fields to each other -> they each parse the same string on their own. The exploit lives in the gap between them.
 
 ### starting point
 

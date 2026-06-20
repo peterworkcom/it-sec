@@ -1,6 +1,6 @@
 # path traversal
 
-> Path traversal (also called directory traversal) is a web security vulnerability that lets an attacker read — and sometimes write — files on the server that they were never supposed to
+> Path traversal (also called directory traversal) is a web security vulnerability that lets an attacker read -> and sometimes write -> files on the server that they were never supposed to
 > access, by manipulating file paths that the application builds from user input.
 
 ## The core idea

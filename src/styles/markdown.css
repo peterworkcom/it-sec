@@ -147,7 +147,7 @@
   font-style: italic;
 }
 
-/* Copy button — injected via JS, must stay global */
+/* Copy button -> injected via JS, must stay global */
 .copy-btn {
   position: absolute;
   top: var(--sp-2);

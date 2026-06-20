@@ -52,6 +52,6 @@ declare +x API_URL          # remove the export attribute
 ## Notes
 
 - Using `declare` inside a function makes the variable **local** by default; add `-g` to force global scope.
-- The `-r` attribute is permanent for the life of the shell — you cannot undo it with `+r`.
+- The `-r` attribute is permanent for the life of the shell -> you cannot undo it with `+r`.
 - Version requirements above reflect when each feature was introduced; `-c` is the newest (bash 5.3).
 - `local` accepts the same option letters as `declare` when used inside functions.

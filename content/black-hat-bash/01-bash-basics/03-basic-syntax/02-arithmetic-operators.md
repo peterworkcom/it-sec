@@ -23,10 +23,10 @@ echo $result3
 ## escape wildcards
 
 | Operator | Reason it breaks      | Safe usage              |
-| -------- | --------------------- | ----------------------- |
+| -------- | --------------------- | ----------------------- | --- |
 | `*`      | Shell glob expansion  | `expr 6 \* 5`           |
 | `( )`    | Shell subshell syntax | `expr \( 6 + 5 \) \* 2` |
-| `\|`     | Shell pipe            | `expr 6 \\| 0`          |
+| `\|`     | Shell pipe            | `expr 6 \\              | 0`  |
 | `&`      | Shell background job  | `expr 6 \& 5`           |
 | `<`      | Shell input redirect  | `expr 6 \< 10`          |
 | `>`      | Shell output redirect | `expr 6 \> 3`           |
@@ -99,5 +99,5 @@ echo $result3
 > A few key things to remember:
 
 - Always use $(( )) for arithmetic expansion in modern bash.
-- Division is integer only — remainders are truncated.
+- Division is integer only -> remainders are truncated.
 - For floating point, pipe through bc or use awk.

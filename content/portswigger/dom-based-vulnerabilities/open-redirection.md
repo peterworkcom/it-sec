@@ -24,14 +24,14 @@ location.href = returnUrl ? returnUrl[1] : "/";
 | Part    | Matches                            | Notes                                             |
 | ------- | ---------------------------------- | ------------------------------------------------- |
 | `url=`  | The literal text "url="            | Anchor to find the right query param              |
-| `(`     | —                                  | Opens capture group (becomes index [1] in result) |
+| `(`     | -                                  | Opens capture group (becomes index [1] in result) |
 | `https` | The literal text "https"           |                                                   |
 | `?`     | Makes the preceding `s` optional   | Matches both "http" and "https"                   |
 | `:`     | The literal text ":"               |                                                   |
 | `\/\/`  | "//"                               | Forward slashes escaped with `\`                  |
 | `.`     | Any single character               |                                                   |
 | `+`     | One or more of the preceding token | Combined with `.` matches the rest of the URL     |
-| `)`     | —                                  | Closes capture group                              |
+| `)`     | -                                  | Closes capture group                              |
 
 - the regex can return `null` or an array with two elements
 - in case of `https://example.com?url=https://google.com`

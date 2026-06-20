@@ -30,7 +30,7 @@ The header is included in many request types, not just clicks:
 
 There are several cases where browsers deliberately omit it or strip it down:
 
-- Navigating from HTTPS to HTTP (downgrade) — historically stripped to protect privacy
+- Navigating from HTTPS to HTTP (downgrade) -> historically stripped to protect privacy
 - Typing a URL directly into the address bar
 - Using a bookmark
 - Requests originating from data: or file: URLs
@@ -108,7 +108,7 @@ There are several cases where browsers deliberately omit it or strip it down:
       <td><code>origin-when-cross-origin</code></td>
       <td><code>http://other-site.com/</code></td>
       <td><code>https://news.example.com/</code></td>
-      <td>Sent on downgrade — risky, leaks origin to plaintext</td>
+      <td>Sent on downgrade - risky, leaks origin to plaintext</td>
     </tr>
     <tr>
       <td><code>same-origin</code></td>
@@ -162,7 +162,7 @@ There are several cases where browsers deliberately omit it or strip it down:
       <td><code>strict-origin-when-cross-origin</code></td>
       <td><code>http://other-site.com/</code></td>
       <td><em>(header omitted)</em></td>
-      <td>Stripped on downgrade — this is the modern browser default</td>
+      <td>Stripped on downgrade - this is the modern browser default</td>
     </tr>
     <tr>
       <td><code>unsafe-url</code></td>
@@ -180,7 +180,7 @@ There are several cases where browsers deliberately omit it or strip it down:
       <td><code>unsafe-url</code></td>
       <td><code>http://other-site.com/</code></td>
       <td><code>https://news.example.com/articles/2026/private?id=42</code></td>
-      <td>Full URL leaked over plaintext — name says it all</td>
+      <td>Full URL leaked over plaintext - name says it all</td>
     </tr>
   </tbody>
 </table>
