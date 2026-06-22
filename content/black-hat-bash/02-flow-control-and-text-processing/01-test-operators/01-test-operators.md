@@ -2,7 +2,7 @@
 
 > test operators to set up wide variety conditions
 
-**the following operators will be used in the following section in the [if conditions](?file=black-hat-bash/02-flow-control-and-text-processing/02-if-conditions)**
+**the following operators will be used in the following section in the [if conditions examples](?file=black-hat-bash/02-flow-control-and-text-processing/02-if-conditions/02-if-condition-examples)**
 
 ## file test operators
 

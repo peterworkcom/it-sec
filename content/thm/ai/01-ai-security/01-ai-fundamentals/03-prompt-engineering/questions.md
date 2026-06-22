@@ -9,19 +9,19 @@ tokens
 > What parameter would you set to 0.0 to make an LLM behave as close to deterministic as possible?
 
 ```
-
+Temperature
 ```
 
 > What parameter restricts which tokens the model considers by limiting selection to a cumulative probability mass?
 
 ```
-
+Top-p
 ```
 
 > What term describes the maximum working memory of an LLM, measured in tokens?
 
 ```
-
+context window
 ```
 
 > Which pillar instructs the model on how the answer should be structured, such as bullet points or a JSON object?

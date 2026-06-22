@@ -70,21 +70,15 @@ word=""
 [[ $word = "hi" ]] # fine -> evaluates to false, no crash
 ```
 
-## example
+## `!` negate
 
-`example.sh`
-
-```sh
-#!/bin/bash
-
-echo "give a number:"
-read -r numb
-
-if [[ "${numb}" -gt "10" ]]; then
-    echo "greater then 10"
-else
-    echo "lesser or equal to 10"
-fi
+```
+if [[ ! conditions ]]; then
 ```
 
-- give it a try with `[]` and `[[]]` it will give back the same result
+- the condition(s) result will be true or false but with `!` the result will be the opposite
+
+```bash
+true; echo $?
+! true; echo $?
+```
