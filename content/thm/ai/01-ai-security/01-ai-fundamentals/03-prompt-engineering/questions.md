@@ -27,31 +27,31 @@ context window
 > Which pillar instructs the model on how the answer should be structured, such as bullet points or a JSON object?
 
 ```
-
+Output Format
 ```
 
 > Which pillar specifies rules or limits imposed on the model's response, such as enforcing a tone or forbidding certain topics?
 
 ```
-
+Constraints
 ```
 
 > Which pillar provides the AI with relevant background information or scenario so it understands the situation?
 
 ```
-
+Context
 ```
 
 > Which pillar of prompt engineering defines the core command or action you want the AI to perform?
 
 ```
-
+Instruction
 ```
 
 > What type of prompt is developer-defined, persistent, and remains constant across all sessions?
 
 ```
-
+system prompts
 ```
 
 > What is the term for the intended order of priority between system and user instructions in an LLM application?
@@ -63,7 +63,7 @@ context window
 > What is the term for the prompting technique introduced by Google researchers in 2022 that asks models to break tasks into intermediate reasoning steps?
 
 ```
-
+Chain-of-Thought
 ```
 
 > What prompting technique involves providing no examples and relying entirely on the model's pre-trained knowledge?
