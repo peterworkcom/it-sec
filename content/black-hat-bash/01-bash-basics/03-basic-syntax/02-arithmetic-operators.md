@@ -94,7 +94,7 @@ echo $result3
 | `expr 3 + 2`  | External `expr` command (older style)    |
 
 > **Note:** Bash only supports integer arithmetic natively. For decimals, use `bc` or `awk`.
-> Example: `echo "scale=2; 10 / 3" | bc` → `3.33`
+> Example: `echo "scale=2; 10 / 3" | bc` -> `3.33`
 
 > A few key things to remember:
 

@@ -69,7 +69,7 @@
 │                                             │
 │     Does ACAO match my origin?     YES      │
 │     Is ACAC true?                  YES      │
-│     → Allow JS to read response             │
+│     -> Allow JS to read response            │
 └──────────────────────┬──────────────────────┘
                        │
                        ▼
@@ -87,7 +87,7 @@
                        ▼
 ┌─────────────────────────────────────────────┐
 │  8. Attacker reads log                      │
-│     → Victim's API key captured             │
+│     -> Victim's API key captured            │
 └─────────────────────────────────────────────┘
 ```
 

@@ -57,7 +57,7 @@ system prompts
 > What is the term for the intended order of priority between system and user instructions in an LLM application?
 
 ```
-
+Instruction hierarchy
 ```
 
 > What is the term for the prompting technique introduced by Google researchers in 2022 that asks models to break tasks into intermediate reasoning steps?

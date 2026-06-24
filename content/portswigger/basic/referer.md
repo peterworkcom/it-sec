@@ -72,7 +72,7 @@ There are several cases where browsers deliberately omit it or strip it down:
       <td><code>no-referrer-when-downgrade</code></td>
       <td><code>http://other-site.com/</code></td>
       <td><em>(header omitted)</em></td>
-      <td>HTTPS → HTTP downgrade, header stripped</td>
+      <td>HTTPS -> HTTP downgrade, header stripped</td>
     </tr>
     <tr>
       <td><code>origin</code></td>
