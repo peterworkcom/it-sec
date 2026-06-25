@@ -69,23 +69,23 @@ Chain-of-Thought
 > What prompting technique involves providing no examples and relying entirely on the model's pre-trained knowledge?
 
 ```
-
+Zero-shot
 ```
 
 > What prompting technique involves saving and reusing a standardised prompt structure for recurring tasks?
 
 ```
-
+Prompt templates
 ```
 
 > What simple phrase can be added to a prompt to trigger Zero-shot Chain-of-Thought reasoning?
 
 ```
-
+Let's think step by step
 ```
 
 > What's the flag?
 
 ```
-
+THM{Pr0mpt_3ng1neer}
 ```
