@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "markdown-it": "^14.2.0",
-    "solid-js": "^1.9.12"
+    "solid-js": "^1.9.13"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^24.12.2",
-    "prettier": "3.8.3",
-    "typescript": "~6.0.2",
-    "vite": "^8.0.10",
+    "@types/node": "^26.0.1",
+    "prettier": "3.8.4",
+    "typescript": "~6.0.3",
+    "vite": "^8.1.0",
     "vite-plugin-solid": "^2.11.12"
   }
 }
