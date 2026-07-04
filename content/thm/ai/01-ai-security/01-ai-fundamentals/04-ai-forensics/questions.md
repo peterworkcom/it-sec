@@ -51,7 +51,7 @@ Daubert
 > What term describes AI models whose internal decision-making processes are difficult to interpret?
 
 ```
-
+Black Box
 ```
 
 > What real-world technology used by law enforcement has been shown to produce racially biased results in identifying suspects?
