@@ -57,37 +57,37 @@ Black Box
 > What real-world technology used by law enforcement has been shown to produce racially biased results in identifying suspects?
 
 ```
-
+Facial Recognition
 ```
 
 > What technique allows machine learning to be performed without transferring sensitive data to a central server, helping preserve privacy?
 
 ```
-
+Federated Learning
 ```
 
 > At what time does the attacker successfully log in as j.morgan?
 
 ```
-
+03:01:02
 ```
 
 > What attack method was used to gain initial access?
 
 ```
-
+Phishing
 ```
 
 > Can you find the attacker's email address?
 
 ```
-
+akeane@poseidonenergy.net
 ```
 
 > What command did the attacker run as j.morgan to gain access to the r.house account?
 
 ```
-
+sudo nano /home/r.house/.ssh/authorized_keys
 ```
 
 > What is the full path of the archive used to steal RobbCo's source code?
