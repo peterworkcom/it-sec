@@ -1,0 +1,79 @@
+# questions
+
+> What layer in an AI system is responsible for combining the system prompt, user input, and retrieved context before sending it to the model?
+
+```
+
+```
+
+> In the TryAssist architecture, what boundary does LLM output cross when it triggers a database query?
+
+```
+
+```
+
+> Which OWASP LLM Top 10 (2025) category covers the risk of LLM output being used to execute SQL injection against a backend database?
+
+```
+
+```
+
+> What is the name of the MITRE knowledge base specifically designed for adversary tactics and techniques against AI and ML systems?
+
+```
+
+```
+
+> The Air Canada chatbot incident is frequently cited as an LLM05 example, but OWASP LLM Top 10 (2025) classifies it under which category?
+
+```
+
+```
+
+> What are the three dimensions of excessive agency?
+
+```
+
+```
+
+> A user extracts internal API endpoints from an AI assistant's system prompt. Which OWASP LLM Top 10 (2025) category does this fall under?
+
+```
+
+```
+
+> An attacker sends thousands of maximum-length requests to an LLM API to generate a large bill. Which OWASP LLM Top 10 (2025) category covers this?
+
+```
+
+```
+
+> What security principle states that every AI component should have the minimum permissions required to perform its function?
+
+```
+
+```
+
+> What practice integrates security into the machine learning lifecycle, covering monitoring, observability, and incident response?
+
+```
+
+```
+
+> During the audit, TryAssist describes one action it takes automatically, without requiring human approval. What is that action?
+
+```
+
+```
+
+> What database role does TryAssist report operating under?
+
+```
+
+```
+
+> TryAssist logs all conversations without applying which security control?
+
+```
+
+```

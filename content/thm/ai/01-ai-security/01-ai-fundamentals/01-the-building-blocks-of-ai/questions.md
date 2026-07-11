@@ -1,1 +1,85 @@
 # questions
+
+> What is the term for when a model becomes too familiar with its training data and fails to generalise to new data?
+
+```
+Overfitting
+```
+
+> What is the subfield of AI that enables systems to learn from data without being explicitly programmed?
+
+```
+Machine Learning
+```
+
+> What's the flag?
+
+```
+THM{st3p_0ne_d3f1n3_th3_pr0bl3m}
+```
+
+> Which category of ML algorithm learns by receiving rewards or penalties based on actions taken in an environment?
+
+```
+Reinforcement learning
+```
+
+> Which category of ML algorithm uses a small amount of labelled data to guide learning across a larger unlabelled dataset?
+
+```
+Semi-supervised learning
+```
+
+> What's the flag?
+
+```
+THM{4lg0r1thm_4g3nt}
+```
+
+> What is the first layer in a neural network that receives raw input data?
+
+```
+Input layer
+```
+
+> What term describes the weighted connections between nodes in a neural network?
+
+```
+Synapses
+```
+
+> What's the flag?
+
+```
+THM{n3ur0n_1_0nl1n3}
+```
+
+> What type of neural network, introduced by Google in 2017, powers modern LLMs?
+
+```
+Transformer neural networks
+```
+
+> What is the name of the process where humans review and flag model outputs to refine its behaviour after pre-training?
+
+```
+RLHF
+```
+
+> What mechanism do transformer networks use to assign different levels of importance to different words in a sequence?
+
+```
+Attention
+```
+
+> What algorithm is used to adjust a model's parameters based on the difference between its prediction and the correct answer?
+
+```
+Backpropagation
+```
+
+> What's the flag?
+
+```
+THM{y0u_tr41n3d_th3_n3tw0rk}
+```
