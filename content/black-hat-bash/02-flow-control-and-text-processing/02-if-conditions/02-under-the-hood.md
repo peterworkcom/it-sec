@@ -10,7 +10,7 @@
 
 > `true` is a command and it returns 0
 
-```bash
+```sh
 #!/bin/bash
 
 if true; then
@@ -20,7 +20,7 @@ fi
 
 > `false` is a command and it returns 1
 
-```bash
+```sh
 #!/bin/bash
 
 if false; then

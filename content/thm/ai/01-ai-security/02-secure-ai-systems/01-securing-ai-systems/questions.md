@@ -51,13 +51,13 @@ LLM10
 > What security principle states that every AI component should have the minimum permissions required to perform its function?
 
 ```
-
+Least Privilege
 ```
 
 > What practice integrates security into the machine learning lifecycle, covering monitoring, observability, and incident response?
 
 ```
-
+MLSecOps
 ```
 
 > During the audit, TryAssist describes one action it takes automatically, without requiring human approval. What is that action?

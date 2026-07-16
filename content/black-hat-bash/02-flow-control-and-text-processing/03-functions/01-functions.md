@@ -2,7 +2,7 @@
 
 > `functions` used to define a code blocks that would be used multiple times, to avoid repetition
 
-```bash
+```sh
 #!/bin/bash
 
 favorite_unit() {

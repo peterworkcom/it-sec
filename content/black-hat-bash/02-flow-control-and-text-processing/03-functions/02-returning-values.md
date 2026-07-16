@@ -4,7 +4,7 @@
 
 - if there is no `return` statement, the function will return the last run command exit code
 
-```bash
+```sh
 #!/bin/bash
 
 is_root() {
@@ -29,7 +29,7 @@ fi
 
 ## alternative
 
-```bash
+```sh
 #!/bin/bash
 
 is_root() {

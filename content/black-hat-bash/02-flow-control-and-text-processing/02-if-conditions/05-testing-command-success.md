@@ -14,7 +14,7 @@ fi
 
 - `if` runs everything as a command ([more details](?file=black-hat-bash/02-flow-control-and-text-processing/02-if-conditions/02-under-the-hood))
 
-```bash
+```sh
 #!/bin/bash
 
 if touch file.txt; then

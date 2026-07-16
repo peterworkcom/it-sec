@@ -4,7 +4,7 @@
 
 ## `&&`
 
-```bash
+```sh
 #!/bin/bash
 
 echo "content" > file.txt
@@ -19,7 +19,7 @@ fi
 
 ## `||`
 
-```bash
+```sh
 #!/bin/bash
 
 NUMBER="11"

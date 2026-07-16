@@ -21,7 +21,7 @@ fi
 
 `check.sh`
 
-```bash
+```sh
 #!/bin/bash
 
 USER_INPUT=${1}
@@ -44,14 +44,14 @@ fi
 
 - have a file and a folder in the folder
 
-```sh
+```bash
 touch zergling.txt
 mkdir marine
 ```
 
 - run the `check.sh` with those parameters plus with one that does not exist
 
-```sh
+```bash
 ./check.sh zergling.txt
 ./check.sh marine
 ./check.sh zealot
