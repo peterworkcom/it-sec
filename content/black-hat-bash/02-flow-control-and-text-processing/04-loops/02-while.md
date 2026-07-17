@@ -1,9 +1,9 @@
 # while
 
-> `while` runs it's code block until the condition returns successful exit status code
+> `while` runs it's code block while the condition returns successful exit status code
 
 ```
 while condition; do
-    # run the code while the condition is true
+    # run this code block while the condition is true
 done
 ```
