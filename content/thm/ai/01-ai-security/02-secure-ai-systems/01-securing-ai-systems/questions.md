@@ -63,17 +63,17 @@ MLSecOps
 > During the audit, TryAssist describes one action it takes automatically, without requiring human approval. What is that action?
 
 ```
-
+Merge Pull Requests
 ```
 
 > What database role does TryAssist report operating under?
 
 ```
-
+db_admin
 ```
 
 > TryAssist logs all conversations without applying which security control?
 
 ```
-
+PII Filtering
 ```
