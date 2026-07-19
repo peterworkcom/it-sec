@@ -27,7 +27,7 @@ while true; do
 done
 ```
 
-- it will loop until it canceled
+- it will loop while it not canceled
 
 **the `sleep 1` pauses the loop for 1 sec**
 
@@ -50,8 +50,10 @@ echo "carrier has arrived"
 
 - run the script
 - open a new terminal
-- align the two terminal, so bot visible
+- align the two terminal, so both visible
 - in the new terminal create a new file: `touch carrier`
 - the loop should stop on that specific file creation
 
 > the `-f "${FILE}"` returns `false` while no file, but with the `!` turns it the opposite, so the `while` condition is `true` while no file
+
+- in a `until` loop the `!` operator will not be needed for the same result

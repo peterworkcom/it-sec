@@ -3,19 +3,19 @@
 > Which sample is a member?
 
 ```
-
+MI_SAMPLE_ALPHA
 ```
 
 > Which attack determines whether a known data sample was part of an LLM’s training set?
 
 ```
-
+Membership Inference
 ```
 
 > Which data-based threat involves the model reproducing memorised snippets of its training data?
 
 ```
-
+Training data extraction
 ```
 
 > What is the employee ID?
