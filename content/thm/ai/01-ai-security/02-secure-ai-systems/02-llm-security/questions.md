@@ -21,13 +21,13 @@ Training data extraction
 > What is the employee ID?
 
 ```
-
+7814
 ```
 
 > Which model-based threat attempts to reconstruct sensitive information encoded within a model’s internal representations?
 
 ```
-
+Model Inversion
 ```
 
 > Did you convince the model? Whats the flag?
