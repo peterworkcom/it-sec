@@ -39,7 +39,7 @@ THM{MEMORY_POISONED}
 > Which system component combines system instructions, retrieved data, and user input into a single sequence?
 
 ```
-LLM context window
+the context window
 ```
 
 > Which package should you NOT download?
