@@ -33,13 +33,13 @@ Model Inversion
 > Did you convince the model? Whats the flag?
 
 ```
-
+THM{MEMORY_POISONED}
 ```
 
 > Which system component combines system instructions, retrieved data, and user input into a single sequence?
 
 ```
-
+LLM context window
 ```
 
 > Which package should you NOT download?
