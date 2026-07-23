@@ -1,0 +1,91 @@
+# questions
+
+> In a RAG-based system, which AI asset type is used to retrieve relevant context at query time?
+
+```
+
+```
+
+> An attacker gains access to MegaCorp's model registry and swaps the production model for a modified version. Which AI-specific asset has been compromised?
+
+```
+
+```
+
+> An attacker injects crafted data points into a training pipeline over several months, gradually shifting the model's decision boundaries. At which supply chain stage does the attacker inject the malicious data?
+
+```
+
+```
+
+> Which STRIDE category is insufficient for capturing the delayed, diffuse effects of training data poisoning?
+
+```
+
+```
+
+> What is the primary AI-specific manifestation of Information Disclosure in the STRIDE-AI mapping?
+
+```
+
+```
+
+> An attacker crafts prompts that cause an LLM to bypass its safety guidelines and content restrictions. Which STRIDE category does this map to?
+
+```
+
+```
+
+> Which OWASP LLM Top 10 (2025) entry addresses the risks of AI systems being granted too many permissions or too much autonomy?
+
+```
+
+```
+
+> An attacker drives your monthly inference bill from $15,000 to $180,000 without taking your service offline. What is this type of attack commonly called?
+
+```
+
+```
+
+> What does the acronym ATLAS stand for?
+
+```
+
+```
+
+> Which ATLAS case study described a self-replicating prompt injection worm that spread between AI agents via RAG email systems?
+
+```
+
+```
+
+> What is the ATLAS technique ID for Model Extraction?
+
+```
+
+```
+
+> How many of the OWASP LLM Top 10 entries affect the LLM Inference Endpoint?
+
+```
+
+```
+
+> An organisation notices their chatbot is rendering LLM output directly in the browser without sanitisation. Which OWASP entry does this fall under?
+
+```
+
+```
+
+> Which component in a typical LLM architecture is the primary one that needs hardening against data and model supply chain risks (LLM03)?
+
+```
+
+```
+
+> What's the flag?
+
+```
+
+```
