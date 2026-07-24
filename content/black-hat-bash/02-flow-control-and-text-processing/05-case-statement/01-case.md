@@ -19,3 +19,27 @@ esac
 - the statement closed with a `esac` keyword
 
 ## example
+
+```sh
+#!/bin/bash
+
+UNIT="${1}"
+
+case ${UNIT} in
+    zergling)
+        echo "zerg basic unit"
+        ;;
+    marine)
+        echo "terran basic unit"
+        ;;
+    zealot)
+        echo "protoss basic unit"
+        ;;
+    *)
+        echo "some other unit"
+        ;;
+esac
+```
+
+- `*)` works as a default/final case, everything else goes there
+- call the script with "zergling"/"marine"/"zealot" or any other string
