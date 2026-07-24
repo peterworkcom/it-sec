@@ -3,13 +3,13 @@
 > In a RAG-based system, which AI asset type is used to retrieve relevant context at query time?
 
 ```
-
+Embedding Vectors
 ```
 
 > An attacker gains access to MegaCorp's model registry and swaps the production model for a modified version. Which AI-specific asset has been compromised?
 
 ```
-
+Model Registry / Artifacts
 ```
 
 > An attacker injects crafted data points into a training pipeline over several months, gradually shifting the model's decision boundaries. At which supply chain stage does the attacker inject the malicious data?
