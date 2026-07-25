@@ -15,13 +15,13 @@ Model Registry / Artifacts
 > An attacker injects crafted data points into a training pipeline over several months, gradually shifting the model's decision boundaries. At which supply chain stage does the attacker inject the malicious data?
 
 ```
-
+Data Collection
 ```
 
 > Which STRIDE category is insufficient for capturing the delayed, diffuse effects of training data poisoning?
 
 ```
-
+tampering
 ```
 
 > What is the primary AI-specific manifestation of Information Disclosure in the STRIDE-AI mapping?
