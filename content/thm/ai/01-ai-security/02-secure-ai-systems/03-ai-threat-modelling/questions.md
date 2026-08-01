@@ -27,25 +27,25 @@ tampering
 > What is the primary AI-specific manifestation of Information Disclosure in the STRIDE-AI mapping?
 
 ```
-
+Model Extraction
 ```
 
 > An attacker crafts prompts that cause an LLM to bypass its safety guidelines and content restrictions. Which STRIDE category does this map to?
 
 ```
-
+Elevation of Privilege
 ```
 
 > Which OWASP LLM Top 10 (2025) entry addresses the risks of AI systems being granted too many permissions or too much autonomy?
 
 ```
-
+LLM06: 2025 — Excessive Agency
 ```
 
 > An attacker drives your monthly inference bill from $15,000 to $180,000 without taking your service offline. What is this type of attack commonly called?
 
 ```
-
+Denial of Wallet
 ```
 
 > What does the acronym ATLAS stand for?
