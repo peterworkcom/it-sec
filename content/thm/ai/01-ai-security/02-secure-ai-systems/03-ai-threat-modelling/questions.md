@@ -51,25 +51,25 @@ Denial of Wallet
 > What does the acronym ATLAS stand for?
 
 ```
-
+Adversarial Threat Landscape for Artificial-Intelligence Systems
 ```
 
 > Which ATLAS case study described a self-replicating prompt injection worm that spread between AI agents via RAG email systems?
 
 ```
-
+Morris II
 ```
 
 > What is the ATLAS technique ID for Model Extraction?
 
 ```
-
+AML.T0024
 ```
 
 > How many of the OWASP LLM Top 10 entries affect the LLM Inference Endpoint?
 
 ```
-
+7
 ```
 
 > An organisation notices their chatbot is rendering LLM output directly in the browser without sanitisation. Which OWASP entry does this fall under?
