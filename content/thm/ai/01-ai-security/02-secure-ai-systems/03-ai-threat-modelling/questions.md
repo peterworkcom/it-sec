@@ -75,13 +75,13 @@ AML.T0024
 > An organisation notices their chatbot is rendering LLM output directly in the browser without sanitisation. Which OWASP entry does this fall under?
 
 ```
-
+Improper Output Handling
 ```
 
 > Which component in a typical LLM architecture is the primary one that needs hardening against data and model supply chain risks (LLM03)?
 
 ```
-
+Training pipeline
 ```
 
 > What's the flag?
