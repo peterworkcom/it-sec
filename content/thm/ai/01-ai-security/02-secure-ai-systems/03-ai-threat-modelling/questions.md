@@ -87,5 +87,5 @@ Training pipeline
 > What's the flag?
 
 ```
-
+THM{AI_THREAT_MODEL_COMPLETE}
 ```
