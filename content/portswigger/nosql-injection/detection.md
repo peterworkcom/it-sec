@@ -37,6 +37,13 @@ GET /filter?category=Gifts HTTP/2
 
 ---
 
+`'%00`
+
+- `GET /filter?category=Gifts'%00 HTTP/2`
+- no syntax error
+
+---
+
 `' && 0 && 'x`
 
 - inject `false` condition in the category
