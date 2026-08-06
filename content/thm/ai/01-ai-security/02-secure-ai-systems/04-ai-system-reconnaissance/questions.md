@@ -12,16 +12,16 @@
 5000
 ```
 
->
+> Which unique HTTP response header does the service on 10.10.45.15:8000 return to identify as an NVIDIA product?
 
 ```
-
+NV-Status
 ```
 
->
+> When you run `grpcurl` against 10.10.45.15:8001, what is the name of the inference service listed in the reflection output?
 
 ```
-
+inference.GRPCInferenceService
 ```
 
 >
