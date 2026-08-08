@@ -24,16 +24,16 @@ NV-Status
 inference.GRPCInferenceService
 ```
 
->
+> What MLflow REST API endpoint would you use to retrieve the artifact storage location for a specific model version?
 
 ```
-
+/api/2.0/mlflow/model-versions/search
 ```
 
->
+> What is the cleartext password for the MLflow service account stored in the Jupyter notebook on 10.10.45.20?
 
 ```
-
+cyphira-MLfl0w-2024!
 ```
 
 >
