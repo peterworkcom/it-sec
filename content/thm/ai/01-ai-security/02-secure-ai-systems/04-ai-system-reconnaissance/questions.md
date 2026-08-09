@@ -36,16 +36,16 @@ inference.GRPCInferenceService
 cyphira-MLfl0w-2024!
 ```
 
->
+> The Cyphira Jupyter notebook at 10.10.45.20 contains a Hugging Face token (hf_kR7mXpQvL9nJwT2yBcDfAeGh8iKlMnOp). The internal-kb-embedder model on MLflow references sentence-transformers/all-MiniLM-L6-v2 as its base model. What ATLAS technique ID covers the risk of these exposed supply chain dependencies?
 
 ```
-
+AML.T0010
 ```
 
->
+> You scanned the Cyphira subnet with nmap, probed endpoints with curl, and extracted metadata from MLflow APIs. All of these activities fall under one overarching ATLAS tactic. What is its ID?
 
 ```
-
+AML.TA0002
 ```
 
 >
