@@ -5,3 +5,9 @@
 ```
 context window
 ```
+
+> What type of prompt contains hidden high-priority instructions that define the model’s role and restrictions?
+
+```
+system prompt
+```
