@@ -41,3 +41,21 @@ tokens
 ```
 OWASP
 ```
+
+> What was the secret codename revealed during the Bing Chat system prompt leak in 2023?
+
+```
+Sydney
+```
+
+> What prompt injection technique hides malicious instructions inside markup or structured text?
+
+```
+format-based injection
+```
+
+> Did you replicate the $1 Chevrolet Tahoe attack? What's the flag?
+
+```
+THM{duD3_wh3r3s_my_c4R}
+```
