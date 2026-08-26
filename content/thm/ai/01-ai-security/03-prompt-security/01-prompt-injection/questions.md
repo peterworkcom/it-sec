@@ -59,3 +59,21 @@ format-based injection
 ```
 THM{duD3_wh3r3s_my_c4R}
 ```
+
+> What type of prompt injection hides malicious instructions inside external sources like emails or web pages?
+
+```
+indirect prompt injection
+```
+
+> What kind of exploit requires no attacker interaction beyond planting the hidden prompt?
+
+```
+zero-click
+```
+
+> What Microsoft Copilot indirect prompt injection incident was dubbed as a zero-click data leak?
+
+```
+EchoLeak
+```
