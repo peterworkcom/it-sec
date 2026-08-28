@@ -77,3 +77,9 @@ zero-click
 ```
 EchoLeak
 ```
+
+> Can you get the chatbot to give you the CEOs email? What is it?
+
+```
+adam.driver@llmborghini.com
+```
