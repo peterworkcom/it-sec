@@ -53,3 +53,23 @@ When the cache and the origin server disagree, they read the same URL as two dif
 Browsers encode some characters (`{`, `}`, `<`, `>`) and cut the path at #, so those can't be used directly. An encoded version may still work if the cache or server decodes it.
 
 > good options for [delimiter](/?file=portswigger/web-cache-deception/delimiters)
+
+## Normalization Exploits
+
+| Feature                | Origin resolves, cache doesn't                        | Cache resolves, origin doesn't                                                           |
+| ---------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Who resolves `..`?** | Origin server                                         | Cache server                                                                             |
+| **Payload structure**  | `/<static-folder>/..%2f<private-path>`                | `/<private-path>%2f%2e%2e%2f<static-folder>`                                             |
+| **Example**            | `/assets/..%2fprofile`                                | `/profile;%2f%2e%2e%2fstatic`                                                            |
+| **Cache reads it as**  | `/assets/..%2fprofile` (stores it)                    | `/static` (stores it)                                                                    |
+| **Origin reads it as** | `/profile` (returns private data)                     | `/profile` (returns private data)                                                        |
+| **Encoding needed**    | Encode the traversal slash (`%2f`)                    | Encode everything (`%2f%2e%2e%2f`)                                                       |
+| **Extra step needed?** | No, path traversal is enough                          | Yes, add a delimiter the origin uses but the cache ignores (e.g. `;`)                    |
+| **Why it works**       | Cache keeps it under `/assets` -> stores private data | Origin's delimiter cuts to `/profile`; cache still sees `/static` -> stores private data |
+
+> Key difference
+
+- **First one** -> path traversal alone works
+- **Second one** -> traversal isn't enough; you must add a delimiter so the origin returns real data instead of an error
+
+> Origin returns private data -> cache stores it under a "safe" static path.

