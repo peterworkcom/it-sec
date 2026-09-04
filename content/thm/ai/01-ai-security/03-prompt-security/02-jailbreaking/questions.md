@@ -29,3 +29,9 @@ RLHF
 ```
 alignment tax
 ```
+
+> Which kinds of languages can models trained primarily on English be beneficial for in jailbreaking attempts?
+
+```
+Low-resource languages
+```
