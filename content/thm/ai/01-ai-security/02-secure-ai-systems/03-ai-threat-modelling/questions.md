@@ -39,7 +39,7 @@ Elevation of Privilege
 > Which OWASP LLM Top 10 (2025) entry addresses the risks of AI systems being granted too many permissions or too much autonomy?
 
 ```
-LLM06: 2025 — Excessive Agency
+LLM06: 2025 - Excessive Agency
 ```
 
 > An attacker drives your monthly inference bill from $15,000 to $180,000 without taking your service offline. What is this type of attack commonly called?

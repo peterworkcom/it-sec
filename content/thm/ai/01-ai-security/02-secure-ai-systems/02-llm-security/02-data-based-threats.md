@@ -30,7 +30,7 @@
 
 - membership inference often exploits statistical quirks or "fingerprints" left by training data
 
-## Prompt Leakage (LLM07:2025 — System Prompt Leakage)
+## Prompt Leakage (LLM07:2025 - System Prompt Leakage)
 
 > `Target / Attack Surface`: System prompt / developer instructions
 

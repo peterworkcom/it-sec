@@ -18,7 +18,7 @@
 - from the model's perspective, all tokens inside the context window are treated uniformly during inference
 - Attackers can leverage this lack of distinction
 
-## Context Overflow (LLM10:2025 — Unbounded Consumption)
+## Context Overflow (LLM10:2025 - Unbounded Consumption)
 
 > `Target / Attack Surface`: Context window size and system resources
 

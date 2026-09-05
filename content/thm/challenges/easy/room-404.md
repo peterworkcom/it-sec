@@ -45,7 +45,7 @@ gobuster dir -u "http://<target-machine-ip>:8080" -w /usr/share/wordlists/SecLis
 
 `-w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt` -> The wordlist, this file has thousands of common folder/file names like /admin, /backup, /login, /uploads etc...
 
-`-r` ->Follow redirects, if a URL redirects (like /admin → /admin/), gobuster follows it
+`-r` ->Follow redirects, if a URL redirects (like /admin -> /admin/), gobuster follows it
 
 ---
 

@@ -12,7 +12,7 @@
 
 - LLMs can make scams far more convincing than traditional phishing, an LLM can now generate spear-phishing emails that read exactly like a colleague or executive
 
-## Trust Exploitation (LLM09:2025 — Misinformation)
+## Trust Exploitation (LLM09:2025 - Misinformation)
 
 > `Target / Attack Surface`: User trust and judgment
 

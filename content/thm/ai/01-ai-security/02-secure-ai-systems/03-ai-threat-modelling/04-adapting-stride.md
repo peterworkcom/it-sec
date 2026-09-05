@@ -12,32 +12,32 @@
   </thead>
   <tbody>
     <tr>
-      <td><strong>S</strong> — Spoofing</td>
+      <td><strong>S</strong> - Spoofing</td>
       <td>Authenticity</td>
       <td>Pretending to be someone or something you're not</td>
     </tr>
     <tr>
-      <td><strong>T</strong> — Tampering</td>
+      <td><strong>T</strong> - Tampering</td>
       <td>Integrity</td>
       <td>Modifying data or code without authorisation</td>
     </tr>
     <tr>
-      <td><strong>R</strong> — Repudiation</td>
+      <td><strong>R</strong> - Repudiation</td>
       <td>Non-repudiability</td>
       <td>Denying that you performed an action</td>
     </tr>
     <tr>
-      <td><strong>I</strong> — Information Disclosure</td>
+      <td><strong>I</strong> - Information Disclosure</td>
       <td>Confidentiality</td>
       <td>Exposing information to unauthorised parties</td>
     </tr>
     <tr>
-      <td><strong>D</strong> — Denial of Service</td>
+      <td><strong>D</strong> - Denial of Service</td>
       <td>Availability</td>
       <td>Making a system or resource unavailable</td>
     </tr>
     <tr>
-      <td><strong>E</strong> — Elevation of Privilege</td>
+      <td><strong>E</strong> - Elevation of Privilege</td>
       <td>Authorisation</td>
       <td>Gaining access or capabilities beyond what's permitted</td>
     </tr>
