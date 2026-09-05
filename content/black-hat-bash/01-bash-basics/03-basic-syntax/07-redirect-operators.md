@@ -18,6 +18,20 @@ ls -la > ls.txt
 
 - redirect the bash output to the ls.txt file
 
+---
+
+**if you redirect to the same file the file will end up empty**
+
+```bash
+cat text.txt > text.txt
+```
+
+- the `>` operator wipes the text.txt before the `cat` command
+- then the `cat` command reads an empty file
+- the empty content will be written to the `text.txt`
+
+---
+
 ## `>>` -> append `stdout` to **file**'s end
 
 ```bash

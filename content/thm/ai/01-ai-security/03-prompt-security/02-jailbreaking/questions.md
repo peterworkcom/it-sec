@@ -35,3 +35,21 @@ alignment tax
 ```
 Low-resource languages
 ```
+
+> What jailbreak technique buries harmful requests among multiple benign tasks?
+
+```
+Instruction sandwiching
+```
+
+> Which jailbreaking technique uses emotional manipulation in an attempt to make the model more likely to provide malicious instructions?
+
+```
+The Grandma Exploit
+```
+
+> According to research cited in the content, what success rate do roleplay attacks achieve on commercial systems?
+
+```
+84.3%
+```
