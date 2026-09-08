@@ -1,4 +1,4 @@
-# Classic Jailbreak Techniques
+# Multi-turn Jailbreaking & Conditioning
 
 > Safety training checks single messages, not whole conversations. Attackers use this gap. They spread a harmful goal across several turns, so no single message looks bad.
 

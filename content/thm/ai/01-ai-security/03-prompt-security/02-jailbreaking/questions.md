@@ -71,3 +71,15 @@ Trigger phrases
 ```
 Poisonous seeds
 ```
+
+> What does DAN stand for?
+
+```
+Do Anything Now
+```
+
+> What's the flag?
+
+```
+THM{ja1lbre3ker}
+```
