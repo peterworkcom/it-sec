@@ -53,3 +53,21 @@ The Grandma Exploit
 ```
 84.3%
 ```
+
+> What term describes the phenomenon where models become less likely to refuse as they engage with a conversation?
+
+```
+Consistency bias
+```
+
+> What multi-turn technique plants harmful concepts gradually without triggering immediate refusal?
+
+```
+Trigger phrases
+```
+
+> What term describes the gradual embedding of harmful ideas across multiple turns, using small incremental steps to avoid detection?
+
+```
+Poisonous seeds
+```
