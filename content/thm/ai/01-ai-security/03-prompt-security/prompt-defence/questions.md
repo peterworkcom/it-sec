@@ -45,25 +45,25 @@ Input guardrail
 > What BERT-based classifier developed by Meta is used as an AI-powered input guardrail?
 
 ```
-
+Llama Prompt Guard 2
 ```
 
 > What foundational security principle states that every component should have only the permissions it needs to perform its job?
 
 ```
-
+Principle of least privilege
 ```
 
 > What is the OWASP identifier for the vulnerability caused by unsanitised LLM output being passed to downstream systems?
 
 ```
-
+LLM05:2025
 ```
 
 > What classic web vulnerability can result from LLM-generated JavaScript being rendered in a browser without sanitisation?
 
 ```
-
+xss
 ```
 
 > Can you get the flag?
