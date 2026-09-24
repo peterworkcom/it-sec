@@ -11,3 +11,15 @@ build process
 ```
 transitive dependency
 ```
+
+> What are the four key components of an AI supply chain? (listed alphabetically)
+
+```
+Datasets, Dependencies, Frameworks, Models
+```
+
+> What do model files contain that allows them to run code when loaded?
+
+```
+serialised objects
+```
