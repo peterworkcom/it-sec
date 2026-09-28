@@ -23,3 +23,9 @@ Datasets, Dependencies, Frameworks, Models
 ```
 serialised objects
 ```
+
+> What is the dominant file format for running local large language models such as LLaMA, Mistral, and Qwen?
+
+```
+gguf
+```
