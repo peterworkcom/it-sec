@@ -29,3 +29,33 @@ serialised objects
 ```
 gguf
 ```
+
+> At which layer of the AI supply chain do pickle-based attacks occur?
+
+```
+Model Layer
+```
+
+> Which level of model attack is eliminated by converting to SafeTensors format?
+
+```
+Serialisation-level
+```
+
+> Researchers find that 0.1% of a public training dataset has been replaced with crafted samples designed to introduce a backdoor. Which attack layer does this represent?
+
+```
+Data Layer
+```
+
+> The torchtriton package exploited pip's version resolution to install a public package over an internal one. Which of the four attack layers does this target?
+
+```
+Dependency layer
+```
+
+> The @solana/web3.js attacker stole a maintainer's credentials to push malicious updates to a legitimate, high-trust repository. Which attack layer does this represent?
+
+```
+Infrastructure layer
+```
