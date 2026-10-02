@@ -59,3 +59,21 @@ Dependency layer
 ```
 Infrastructure layer
 ```
+
+> In the static site, what is the name of the unverified organisation that uploaded the model?
+
+```
+trustworthy-ai-models
+```
+
+> How many downloads does this model have (last month)?
+
+```
+127
+```
+
+> What file format does the verified model (google-bert/bert-base-uncased) use for its weights?
+
+```
+safetensors
+```
