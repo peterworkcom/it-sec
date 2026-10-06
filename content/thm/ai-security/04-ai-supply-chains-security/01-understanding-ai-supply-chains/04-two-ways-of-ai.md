@@ -38,4 +38,4 @@ Both ways involve trust.
 - **Downloading** = you trust the file itself
 - **API** = you trust the company's entire process
 
-You can't fully check either one on your own — but the things you're trusting are different.
+You can't fully check either one on your own, but the things you're trusting are different.
