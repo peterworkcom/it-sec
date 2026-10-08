@@ -23,3 +23,21 @@ architecture-level attacks
 ```
 Lambda
 ```
+
+> What Python module can safely disassemble pickle files without executing them?
+
+```
+pickletools
+```
+
+> Using the attached target VM, what external domain does the malicious model attempt to contact?
+
+```
+attacker.com
+```
+
+> What pickle opcode executes the function specified by STACK_GLOBAL?
+
+```
+REDUCE
+```
