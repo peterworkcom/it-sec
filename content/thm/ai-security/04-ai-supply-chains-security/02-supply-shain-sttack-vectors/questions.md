@@ -41,3 +41,15 @@ attacker.com
 ```
 REDUCE
 ```
+
+> What term describes an attack where a public package overrides an internal package of the same name?
+
+```
+Dependency confusion
+```
+
+> What technique involves creating model names that closely resemble legitimate ones?
+
+```
+Typosquatting
+```
