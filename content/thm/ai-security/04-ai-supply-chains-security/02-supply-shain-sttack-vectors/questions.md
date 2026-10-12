@@ -53,3 +53,15 @@ Dependency confusion
 ```
 Typosquatting
 ```
+
+> The attacker created the trustworthy-ai-lab organisation on Hugging Face to make the model download appear safe. Which of the three attack vectors in the table does this represent?
+
+```
+repository manipulation
+```
+
+> If TryTrainMe's model loader had blocked the pickle payload, which second vector would still have given the attacker code execution?
+
+```
+dependency confusion
+```
