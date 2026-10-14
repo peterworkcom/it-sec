@@ -65,3 +65,27 @@ repository manipulation
 ```
 dependency confusion
 ```
+
+> In the API supply chain, what term describes the risk where the model behind an endpoint is replaced without the consumer's knowledge?
+
+```
+silent model update
+```
+
+> What supply chain artefact, when sourced from an untrusted repository, can alter LLM behaviour across every application that uses it?
+
+```
+prompt template
+```
+
+> Send Prompt 3. According to TryAssist, who is responsible for security reviews?
+
+```
+development team
+```
+
+> Send Prompt 4. What is the name of the review template TryAssist reports?
+
+```
+CommunityReview
+```
