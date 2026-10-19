@@ -23,3 +23,9 @@ Quarantine
 ```
 model_review_v2.pkl
 ```
+
+> What object type does the compromised model's telemetry show on load completion, instead of a model?
+
+```
+int
+```
