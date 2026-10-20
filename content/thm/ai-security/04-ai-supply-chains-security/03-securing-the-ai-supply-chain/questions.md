@@ -29,3 +29,15 @@ model_review_v2.pkl
 ```
 int
 ```
+
+> Which Trail of Bits tool performs static analysis of pickle files?
+
+```
+Fickling
+```
+
+> What severity level does ModelScan assign to an `os.system` call in a model file?
+
+```
+critical
+```
