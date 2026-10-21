@@ -41,3 +41,15 @@ Fickling
 ```
 critical
 ```
+
+> Open the Telemetry terminal. How many layers does the compromised model's architecture contain?
+
+```
+5
+```
+
+> Run `inspect_h5_model.py` on `image_classifier_v2.h5`. What is the name of the suspicious Lambda layer?
+
+```
+manipulate_output
+```

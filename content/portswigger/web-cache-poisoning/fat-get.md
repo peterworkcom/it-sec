@@ -35,7 +35,7 @@ alert(1)({"country":"United Kingdom"});
 - `Extensions` -> `Param Miner` -> `Guess Query`
 - it will give back NOTHING this time
 - wtf to do now
-- lets rty a fat GET
+- lets try a fat GET
 
 > what is fat GET
 
