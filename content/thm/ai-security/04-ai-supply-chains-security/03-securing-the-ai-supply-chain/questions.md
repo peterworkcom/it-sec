@@ -53,3 +53,21 @@ critical
 ```
 manipulate_output
 ```
+
+> What is the recommended practice for specifying package versions in requirements.txt?
+
+```
+Version Pinning
+```
+
+> What tool scans Python dependencies against known vulnerability databases?
+
+```
+pip-audit
+```
+
+> Which SBOM format is maintained by OWASP and focuses on security?
+
+```
+CycloneDX
+```
