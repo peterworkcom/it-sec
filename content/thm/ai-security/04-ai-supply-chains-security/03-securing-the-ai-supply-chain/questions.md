@@ -71,3 +71,21 @@ pip-audit
 ```
 CycloneDX
 ```
+
+> What should you establish to detect when an API provider silently updates their model?
+
+```
+Behavioural Baseline
+```
+
+> What type of artefact should be version-controlled and reviewed like code, to prevent untrusted content from altering LLM behaviour?
+
+```
+System Prompts
+```
+
+> What company name does Config B identify as the service provider?
+
+```
+TryTrainML
+```
