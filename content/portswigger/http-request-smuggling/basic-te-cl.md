@@ -31,7 +31,7 @@ X
 ```
 3\r\n
 abc\r\n
-X
+X\r\n
 ```
 
 - **3,\r,\n,a,b,c** -> 6 character, it chops of the **x,\r,\n**

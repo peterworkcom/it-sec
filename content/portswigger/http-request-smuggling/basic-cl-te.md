@@ -97,3 +97,5 @@ duck=quack
 ```
 
 - where the **GPOST** is not a method
+
+> ![basic-cl-te.png](./images/basic-cl-te.png)

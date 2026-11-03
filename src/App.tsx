@@ -40,7 +40,7 @@ const App = () => {
 
   const html = createMemo(() => {
     const file = selected();
-    return file ? renderMarkdown(file.content) : "";
+    return file ? renderMarkdown(file.content, file.path) : "";
   });
 
   let mdRef: HTMLDivElement | undefined;

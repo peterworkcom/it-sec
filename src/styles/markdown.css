@@ -187,3 +187,11 @@ summary {
   font-weight: 600;
   color: var(--accent);
 }
+
+/* Keep images inside the content column. `max-width` caps the width at the
+   container; `height: auto` drops any intrinsic or attribute height so the
+   aspect ratio follows the new width instead of stretching. */
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}

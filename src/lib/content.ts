@@ -72,8 +72,7 @@ export const fileToSlug = (path: string): string =>
 
 const filesBySlug = new Map(allFiles.map((f) => [fileToSlug(f.path), f]));
 
-export const findFileBySlug = (slug: string): FileNode | undefined =>
-  filesBySlug.get(slug);
+export const findFileBySlug = (slug: string): FileNode | undefined => filesBySlug.get(slug);
 
 export const searchFiles = (query: string): FileNode[] => {
   if (!query.trim()) return [];
@@ -81,4 +80,38 @@ export const searchFiles = (query: string): FileNode[] => {
   return allFiles.filter(
     (f) => f.name.toLowerCase().includes(q) || f.content.toLowerCase().includes(q),
   );
+};
+
+// Image assets that sit next to the markdown files. Globbing them with `?url`
+// makes Vite emit each one as a real build asset and hands back its final URL,
+// so they keep working after `vite build` hashes and relocates them.
+const assetUrls = import.meta.glob<string>("/content/**/*.{png,jpg,jpeg,gif,svg,webp,avif,ico}", {
+  query: "?url",
+  import: "default",
+  eager: true,
+});
+
+// Anything with a scheme (http:, data:, mailto:) or a protocol-relative "//".
+const isExternal = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+
+const normalizePath = (path: string): string => {
+  const out: string[] = [];
+  for (const part of path.split("/")) {
+    if (part === "" || part === ".") continue;
+    if (part === "..") out.pop();
+    else out.push(part);
+  }
+  return "/" + out.join("/");
+};
+
+export const dirOf = (filePath: string): string => filePath.slice(0, filePath.lastIndexOf("/"));
+
+/**
+ * Resolve a markdown asset reference against the folder of the file it came from.
+ * Returns the bundled asset URL, or null to leave the original src untouched.
+ */
+export const resolveContentAsset = (src: string, fromDir: string): string | null => {
+  if (!src || src.startsWith("#") || isExternal.test(src)) return null;
+  const absolute = src.startsWith("/") ? normalizePath(src) : normalizePath(`${fromDir}/${src}`);
+  return assetUrls[absolute] ?? null;
 };
