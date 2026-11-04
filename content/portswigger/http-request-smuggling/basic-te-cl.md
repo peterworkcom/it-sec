@@ -137,3 +137,5 @@ Content-Length: 6
 ```
 
 - this will append to the next request but it needs `Content-Length: 6` to pick up the next request
+
+> ![basic-te-cl.png](./images/basic-te-cl.png)

@@ -155,3 +155,7 @@ Content-Length: 6
 ```
 
 - this will append to the next request but it needs `Content-Length: 6` to pick up the next request
+
+![obfuscating-te-header-part1](./images/obfuscating-te-header-part1.png)
+![obfuscating-te-header-part2](./images/obfuscating-te-header-part2.png)
+![obfuscating-te-header-part3](./images/obfuscating-te-header-part3.png)
