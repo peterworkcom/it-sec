@@ -58,7 +58,7 @@ X
 
 ---
 
-# HTTP Request Smuggling — Confirm Table
+# HTTP Request Smuggling -> Confirm Table
 
 ## CL.TE confirm message
 
