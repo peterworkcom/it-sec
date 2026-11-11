@@ -3,7 +3,7 @@
 > the goal is to make the server response: `"Unrecognized method GPOST"`
 
 - open the lab in burp browser
-- send the `/` request tot eh repeater
+- send the `/` request to the repeater
 - change the request to `HTTP/1.1`
 - send it again to check if it is still working
 - should return with `200`
